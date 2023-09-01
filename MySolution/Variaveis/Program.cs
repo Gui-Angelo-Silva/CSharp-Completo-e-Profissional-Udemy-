@@ -47,8 +47,8 @@ namespace Variaveis
 			#endregion
 
 			#region Boolean
-			bool verificar = false;
-			verificar = true;
+			//bool verificar = false;
+			//verificar = true;
 			#endregion
 
 			#region String (Cadeia de Caracteres)
@@ -57,11 +57,17 @@ namespace Variaveis
 			//mensagem = texto;
 			#endregion
 
-			#region
+			#region Var
 			//var valor = 100;
 			//valor = 20;
 			////Não aceita string pois já definiu seu valor como int
 			//valor = "Gabriel";
+			#endregion
+
+			#region Object
+			object obj = false;
+			obj = 200;
+			obj = "Gabriel";
 			#endregion
 
 			Console.WriteLine();
