@@ -1,0 +1,15 @@
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\MySolution\MyConsoleApp\bin\Debug\net7.0\MyConsoleApp.exe
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\MySolution\MyConsoleApp\bin\Debug\net7.0\MyConsoleApp.deps.json
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\MySolution\MyConsoleApp\bin\Debug\net7.0\MyConsoleApp.runtimeconfig.json
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\MySolution\MyConsoleApp\bin\Debug\net7.0\MyConsoleApp.dll
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\MySolution\MyConsoleApp\bin\Debug\net7.0\MyConsoleApp.pdb
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\MySolution\MyConsoleApp\obj\Debug\net7.0\MyConsoleApp.csproj.AssemblyReference.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\MySolution\MyConsoleApp\obj\Debug\net7.0\MyConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\MySolution\MyConsoleApp\obj\Debug\net7.0\MyConsoleApp.AssemblyInfoInputs.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\MySolution\MyConsoleApp\obj\Debug\net7.0\MyConsoleApp.AssemblyInfo.cs
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\MySolution\MyConsoleApp\obj\Debug\net7.0\MyConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\MySolution\MyConsoleApp\obj\Debug\net7.0\MyConsoleApp.dll
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\MySolution\MyConsoleApp\obj\Debug\net7.0\refint\MyConsoleApp.dll
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\MySolution\MyConsoleApp\obj\Debug\net7.0\MyConsoleApp.pdb
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\MySolution\MyConsoleApp\obj\Debug\net7.0\MyConsoleApp.genruntimeconfig.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\MySolution\MyConsoleApp\obj\Debug\net7.0\ref\MyConsoleApp.dll

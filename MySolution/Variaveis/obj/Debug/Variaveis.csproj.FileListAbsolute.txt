@@ -1,0 +1,8 @@
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\MySolution\Variaveis\bin\Debug\Variaveis.exe.config
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\MySolution\Variaveis\bin\Debug\Variaveis.exe
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\MySolution\Variaveis\bin\Debug\Variaveis.pdb
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\MySolution\Variaveis\obj\Debug\Variaveis.csproj.AssemblyReference.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\MySolution\Variaveis\obj\Debug\Variaveis.csproj.SuggestedBindingRedirects.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\MySolution\Variaveis\obj\Debug\Variaveis.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\MySolution\Variaveis\obj\Debug\Variaveis.exe
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\MySolution\Variaveis\obj\Debug\Variaveis.pdb
