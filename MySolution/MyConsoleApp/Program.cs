@@ -2,17 +2,22 @@
 {
 	internal class Program
 	{
-		/*
-			Esta é uma aplicação de teste, sendo usada aénas para fins de teste.
-			Onde estamos testando linhas e blocos de comentários
-		*/
+		// Método principal da aplicação
 		static void Main(string[] args)
 		{
-			//Escreve a mensagem Primeiro Comando
+			#region Escreve as cincos primeiras mensagens.
 			Console.WriteLine("Primeiro oComando!");
 			Console.WriteLine("Segundo Comando");
 			Console.WriteLine("Terceiro Comando!");
 			Console.WriteLine("Quarto Comando");
+			#endregion
+			
+			#region Executa outros comandos.
+			Console.WriteLine("Primeiro oComando!");
+			Console.WriteLine("Segundo Comando");
+			Console.WriteLine("Terceiro Comando!");
+			Console.WriteLine("Quarto Comando");
+			#endregion
 		}
 	}
 }
