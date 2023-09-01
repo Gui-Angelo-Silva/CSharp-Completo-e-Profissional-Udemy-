@@ -8,6 +8,13 @@ namespace Variaveis
 {
 	internal class Program
 	{
+		enum Notas
+		{
+			Minimo = 10, 
+			Media = 20, 
+			Maximo = 30
+		}
+
 		static void Main(string[] args)
 		{
 			#region Numericas Integrais
@@ -70,9 +77,13 @@ namespace Variaveis
 			//obj = "Gabriel";
 			#endregion
 
-			#region Constante
+			#region Constantes
 			//const double pi = 3.1415;
 			//const string nome = "Gabriel ";
+			#endregion
+
+			#region Enum
+			Notas notasAlunos = Notas.Media;
 			#endregion
 
 			Console.WriteLine();
