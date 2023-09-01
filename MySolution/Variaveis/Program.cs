@@ -51,13 +51,20 @@ namespace Variaveis
 			verificar = true;
 			#endregion
 
-			#region String
-			string texto = @"Guilherme Silva\n 2005";
-			string mensagem = null;
-			mensagem = texto;
+			#region String (Cadeia de Caracteres)
+			//string texto = @"Guilherme Silva\n 2005";
+			//string mensagem = null;
+			//mensagem = texto;
 			#endregion
 
-			Console.WriteLine(mensagem);
+			#region
+			//var valor = 100;
+			//valor = 20;
+			////Não aceita string pois já definiu seu valor como int
+			//valor = "Gabriel";
+			#endregion
+
+			Console.WriteLine();
 			Console.ReadKey();
 		}
 	}
