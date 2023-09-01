@@ -11,8 +11,15 @@ namespace Variaveis
 		enum Notas
 		{
 			Minimo = 10, 
-			Media = 20, 
-			Maximo = 30
+			Media = 15, 
+			Maximo = 20
+		}
+
+		struct Pessoa
+		{
+			public string nome;
+			public int idade;
+			public double altura;
 		}
 
 		static void Main(string[] args)
@@ -83,10 +90,29 @@ namespace Variaveis
 			#endregion
 
 			#region Enum
-			Notas notasAlunos = Notas.Media;
+			//Notas notasAlunos = Notas.Media;
 			#endregion
 
-			Console.WriteLine();
+			#region Struct
+			Pessoa p1 = new Pessoa();
+			p1.altura = 1.70;
+			p1.idade = 18;
+			p1.nome = "Guilherme";
+
+			Pessoa p2 = new Pessoa()
+			{
+				nome = "Gabriel",
+				idade = 13,
+				altura = 1.55
+			};
+
+			p1.nome = "Guilherme Silva";
+			#endregion
+
+			Console.WriteLine(p1.nome);
+			Console.WriteLine(p1.idade);
+			Console.WriteLine(p1.altura);
+
 			Console.ReadKey();
 		}
 	}
