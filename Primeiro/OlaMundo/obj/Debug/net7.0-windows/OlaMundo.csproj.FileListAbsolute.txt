@@ -1,0 +1,17 @@
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\Primeiro\OlaMundo\bin\Debug\net7.0-windows\OlaMundo.exe
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\Primeiro\OlaMundo\bin\Debug\net7.0-windows\OlaMundo.deps.json
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\Primeiro\OlaMundo\bin\Debug\net7.0-windows\OlaMundo.runtimeconfig.json
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\Primeiro\OlaMundo\bin\Debug\net7.0-windows\OlaMundo.dll
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\Primeiro\OlaMundo\bin\Debug\net7.0-windows\OlaMundo.pdb
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\Primeiro\OlaMundo\obj\Debug\net7.0-windows\OlaMundo.csproj.AssemblyReference.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\Primeiro\OlaMundo\obj\Debug\net7.0-windows\OlaMundo.Form1.resources
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\Primeiro\OlaMundo\obj\Debug\net7.0-windows\OlaMundo.csproj.GenerateResource.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\Primeiro\OlaMundo\obj\Debug\net7.0-windows\OlaMundo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\Primeiro\OlaMundo\obj\Debug\net7.0-windows\OlaMundo.AssemblyInfoInputs.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\Primeiro\OlaMundo\obj\Debug\net7.0-windows\OlaMundo.AssemblyInfo.cs
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\Primeiro\OlaMundo\obj\Debug\net7.0-windows\OlaMundo.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\Primeiro\OlaMundo\obj\Debug\net7.0-windows\OlaMundo.dll
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\Primeiro\OlaMundo\obj\Debug\net7.0-windows\refint\OlaMundo.dll
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\Primeiro\OlaMundo\obj\Debug\net7.0-windows\OlaMundo.pdb
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\Primeiro\OlaMundo\obj\Debug\net7.0-windows\OlaMundo.genruntimeconfig.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\Primeiro\OlaMundo\obj\Debug\net7.0-windows\ref\OlaMundo.dll
