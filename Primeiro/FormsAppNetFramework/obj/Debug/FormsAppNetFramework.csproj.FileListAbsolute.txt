@@ -1,0 +1,11 @@
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\Primeiro\FormsAppNetFramework\bin\Debug\FormsAppNetFramework.exe.config
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\Primeiro\FormsAppNetFramework\bin\Debug\FormsAppNetFramework.exe
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\Primeiro\FormsAppNetFramework\bin\Debug\FormsAppNetFramework.pdb
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\Primeiro\FormsAppNetFramework\obj\Debug\FormsAppNetFramework.csproj.AssemblyReference.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\Primeiro\FormsAppNetFramework\obj\Debug\FormsAppNetFramework.csproj.SuggestedBindingRedirects.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\Primeiro\FormsAppNetFramework\obj\Debug\FormsAppNetFramework.Form1.resources
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\Primeiro\FormsAppNetFramework\obj\Debug\FormsAppNetFramework.Properties.Resources.resources
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\Primeiro\FormsAppNetFramework\obj\Debug\FormsAppNetFramework.csproj.GenerateResource.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\Primeiro\FormsAppNetFramework\obj\Debug\FormsAppNetFramework.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\Primeiro\FormsAppNetFramework\obj\Debug\FormsAppNetFramework.exe
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\Primeiro\FormsAppNetFramework\obj\Debug\FormsAppNetFramework.pdb
