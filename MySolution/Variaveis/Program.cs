@@ -40,11 +40,16 @@ namespace Variaveis
 			valor = real1;
 			#endregion
 
+			#region Caractere
 			char letra = '\u0041';
 			char escape = '\n';
 			char literal = 'c';
+			#endregion
 
-			Console.WriteLine(escape);
+			bool verificar = false;
+			verificar = true;
+
+			Console.WriteLine(verificar);
 			Console.ReadKey();
 		}
 	}
