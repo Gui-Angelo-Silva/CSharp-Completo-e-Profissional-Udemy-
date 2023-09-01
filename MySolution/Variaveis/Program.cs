@@ -32,24 +32,30 @@ namespace Variaveis
 			#endregion
 
 			#region Números Reais
-			float real1 = 100.75f; // 32 bits, intervalo de 1,5 x 10-45 a 3,4 x 1038, precisão de 7 dígitos 
-			double real2 = 500.754; // 64 bits, intervalo de 5,0 x 10-324 a 1,7 x 10308, precisão de 15 dígitos
-			decimal real3 = 752538.457m; // 128 bits, intervalo de pelo menos -7,9 x 10-28 a 7,9 x 1028, com precisão de 28 dígitos
+			//float real1 = 100.75f; // 32 bits, intervalo de 1,5 x 10-45 a 3,4 x 1038, precisão de 7 dígitos 
+			//double real2 = 500.754; // 64 bits, intervalo de 5,0 x 10-324 a 1,7 x 10308, precisão de 15 dígitos
+			//decimal real3 = 752538.457m; // 128 bits, intervalo de pelo menos -7,9 x 10-28 a 7,9 x 1028, com precisão de 28 dígitos
 
-			double valor;
-			valor = real1;
+			//double valor;
+			//valor = real1;
 			#endregion
 
 			#region Caractere
-			char letra = '\u0041';
-			char escape = '\n';
-			char literal = 'c';
+			//char letra = '\u0041';
+			//char escape = '\n';
+			//char literal = 'c';
 			#endregion
 
+			#region Boolean
 			bool verificar = false;
 			verificar = true;
+			#endregion
 
-			Console.WriteLine(verificar);
+			string texto = "Guilherme Silva 2005";
+			string mensagem = null;
+			mensagem = texto;
+
+			Console.WriteLine(mensagem);
 			Console.ReadKey();
 		}
 	}
