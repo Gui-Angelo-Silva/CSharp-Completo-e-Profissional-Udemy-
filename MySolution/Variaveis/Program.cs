@@ -65,9 +65,14 @@ namespace Variaveis
 			#endregion
 
 			#region Object
-			object obj = false;
-			obj = 200;
-			obj = "Gabriel";
+			//object obj = false;
+			//obj = 200;
+			//obj = "Gabriel";
+			#endregion
+
+			#region Constante
+			//const double pi = 3.1415;
+			//const string nome = "Gabriel ";
 			#endregion
 
 			Console.WriteLine();
