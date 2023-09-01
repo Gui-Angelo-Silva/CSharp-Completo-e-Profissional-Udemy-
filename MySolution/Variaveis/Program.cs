@@ -51,9 +51,11 @@ namespace Variaveis
 			verificar = true;
 			#endregion
 
-			string texto = "Guilherme Silva 2005";
+			#region String
+			string texto = @"Guilherme Silva\n 2005";
 			string mensagem = null;
 			mensagem = texto;
+			#endregion
 
 			Console.WriteLine(mensagem);
 			Console.ReadKey();
