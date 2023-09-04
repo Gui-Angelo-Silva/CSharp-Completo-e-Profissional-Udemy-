@@ -64,13 +64,21 @@ namespace Operadores
 			//nome += " Silva";
 			#endregion
 
-			bool res = 100 == (50 * 2);
-			bool res2 = (200 / 2) != (100 + 100);
+			#region Igualdade / Comparação
+			//bool res = 100 == (50 * 2);
+			//bool res2 = (200 / 2) != (100 + 100);
 
-			string nome = "Guilherme";
-			bool res3 = nome == "Guilherme";
+			//string nome = "Guilherme";
+			//bool res3 = nome == "Guilherme";
+			#endregion
 
-			Console.WriteLine(res3);
+			//bool res = 100 < 50 * 2;
+			//bool res = 100 > 50 * 2;
+			//bool res = 100 + 25 > 50 * 2;
+			//bool res = 100 <= 50 * 2;
+			bool res = 75 >= 50;
+
+			Console.WriteLine();
 			Console.ReadKey();
 		}
 	}
