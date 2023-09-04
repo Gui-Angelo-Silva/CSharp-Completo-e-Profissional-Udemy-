@@ -80,6 +80,7 @@ namespace Operadores
 			//bool res = 75 >= 50;
 			#endregion
 
+			#region Lógicos
 			//bool res1 = 100 > 50;
 			bool res1 = 100 >= 50;
 			//bool res2 = 50 == 50;
@@ -89,9 +90,12 @@ namespace Operadores
 			bool final = res1 && res2;
 			//bool final2 = res1 || res2;
 			bool final2 = (100 >= 50) || (60 == 50);
+			#endregion
 
-			Console.WriteLine();
+			#region Mostrar
+			Console.WriteLine(final2);
 			Console.ReadKey();
+			#endregion
 		}
 	}
 }
