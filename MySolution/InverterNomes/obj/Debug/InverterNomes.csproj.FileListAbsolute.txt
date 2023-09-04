@@ -1,0 +1,8 @@
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\MySolution\InverterNomes\bin\Debug\InverterNomes.exe.config
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\MySolution\InverterNomes\bin\Debug\InverterNomes.exe
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\MySolution\InverterNomes\bin\Debug\InverterNomes.pdb
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\MySolution\InverterNomes\obj\Debug\InverterNomes.csproj.AssemblyReference.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\MySolution\InverterNomes\obj\Debug\InverterNomes.csproj.SuggestedBindingRedirects.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\MySolution\InverterNomes\obj\Debug\InverterNomes.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\MySolution\InverterNomes\obj\Debug\InverterNomes.exe
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\MySolution\InverterNomes\obj\Debug\InverterNomes.pdb
