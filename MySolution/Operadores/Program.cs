@@ -31,7 +31,7 @@ namespace Operadores
 			#endregion
 
 			#region Incremento e Decremento
-			int num1 = 10;
+			//int num1 = 10;
 
 			//num1 = num1 + 1;
 			//num1++;
@@ -39,16 +39,29 @@ namespace Operadores
 			//num1--;
 			//--num1;
 
-			Console.WriteLine(num1++);
+			//Console.WriteLine(num1++);
 
-			Console.WriteLine(num1);
+			//Console.WriteLine(num1);
 			#endregion
 
-			string nome = "Guilherme";
-			string sobreNome = "Artigas";
-			string nomeCompleto = nome + sobreNome + " " + 2005;
+			#region Concatenação
+			//string nome = "Guilherme";
+			//string sobreNome = "Artigas";
+			//string nomeCompleto = nome + sobreNome + " " + 2005;
+			#endregion
 
-			Console.WriteLine(nomeCompleto);
+			int num1 = 10;
+
+			//num1 = num1 + 20;
+			//num1 += 20;
+			//num1 -= 2;
+			//num1 *= 3;
+			//num1 /= 2;
+			//num1 %= 2;
+
+			string nome = "Guilherme";
+			nome += " Silva";
+			Console.WriteLine();
 			Console.ReadKey();
 		}
 	}
