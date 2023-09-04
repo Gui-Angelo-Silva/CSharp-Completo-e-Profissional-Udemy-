@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InverterNomes", "InverterNo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conversao", "Conversao\Conversao.csproj", "{B7D7EF95-8D7F-4D8E-B4E0-B679D4086B79}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Operadores", "Operadores\Operadores.csproj", "{AF34C837-956C-42F9-AB13-6C56686CF357}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{B7D7EF95-8D7F-4D8E-B4E0-B679D4086B79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7D7EF95-8D7F-4D8E-B4E0-B679D4086B79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7D7EF95-8D7F-4D8E-B4E0-B679D4086B79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF34C837-956C-42F9-AB13-6C56686CF357}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF34C837-956C-42F9-AB13-6C56686CF357}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF34C837-956C-42F9-AB13-6C56686CF357}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF34C837-956C-42F9-AB13-6C56686CF357}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
