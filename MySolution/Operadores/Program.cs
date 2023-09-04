@@ -72,11 +72,23 @@ namespace Operadores
 			//bool res3 = nome == "Guilherme";
 			#endregion
 
+			#region Relacionais
 			//bool res = 100 < 50 * 2;
 			//bool res = 100 > 50 * 2;
 			//bool res = 100 + 25 > 50 * 2;
 			//bool res = 100 <= 50 * 2;
-			bool res = 75 >= 50;
+			//bool res = 75 >= 50;
+			#endregion
+
+			//bool res1 = 100 > 50;
+			bool res1 = 100 >= 50;
+			//bool res2 = 50 == 50;
+			//bool res2 = 50 != 50;
+			bool res2 = 60 == 50;
+
+			bool final = res1 && res2;
+			//bool final2 = res1 || res2;
+			bool final2 = (100 >= 50) || (60 == 50);
 
 			Console.WriteLine();
 			Console.ReadKey();
