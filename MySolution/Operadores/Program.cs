@@ -50,7 +50,8 @@ namespace Operadores
 			//string nomeCompleto = nome + sobreNome + " " + 2005;
 			#endregion
 
-			int num1 = 10;
+			#region Operadores Atribuição
+			//int num1 = 10;
 
 			//num1 = num1 + 20;
 			//num1 += 20;
@@ -59,9 +60,17 @@ namespace Operadores
 			//num1 /= 2;
 			//num1 %= 2;
 
+			//string nome = "Guilherme";
+			//nome += " Silva";
+			#endregion
+
+			bool res = 100 == (50 * 2);
+			bool res2 = (200 / 2) != (100 + 100);
+
 			string nome = "Guilherme";
-			nome += " Silva";
-			Console.WriteLine();
+			bool res3 = nome == "Guilherme";
+
+			Console.WriteLine(res3);
 			Console.ReadKey();
 		}
 	}
