@@ -10,7 +10,7 @@ namespace Colecao
 	{
 		static void Main(string[] args)
 		{
-			#region Vetores
+			#region Unidimensional
 			//int numero = 0;
 
 			//int[] numeros = new int[5];
@@ -34,6 +34,7 @@ namespace Colecao
 			//Console.WriteLine(nomes[0]);
 			#endregion
 
+			#region Bidimensional
 			int[,] numeros = new int[2, 3];
 
 			numeros[0, 0] = 10;
@@ -61,9 +62,12 @@ namespace Colecao
 			};
 
 			Console.WriteLine(nomes[0, 1]);
+			#endregion
 
+			#region Mostrar
 			Console.WriteLine();
 			Console.ReadKey();
+			#endregion
 		}
 	}
 }
