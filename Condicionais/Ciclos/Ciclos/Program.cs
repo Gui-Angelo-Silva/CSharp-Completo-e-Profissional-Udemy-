@@ -35,9 +35,18 @@ namespace Ciclos
 			//{
 			//	Console.WriteLine("O valor é " + i);
 			//}
-			for (int i = 0, j = 10; i < 10; i++, j--)
+			//for (int i = 0, j = 10; i < 10; i++, j--)
+			//{
+			//	Console.WriteLine("I = " + i + " | j = " + j);
+			//}
+			#endregion
+
+			#region Ciclo foreach
+			string[] nomes = { "Gabriel", "Danny", "Arthur", "João" };
+
+			foreach (string nome in nomes)
 			{
-				Console.WriteLine("I = " + i + " | j = " + j);
+				Console.WriteLine("Nome: " + nome);
 			}
 			#endregion
 
