@@ -47,24 +47,41 @@ namespace Condicao
 			#endregion
 
 			#region Condicionais Aninhadas
-			int numero = 10;
+			//int numero = 10;
 
-			if (numero > 5)
-			{
-				Console.Write("O número é maior que 5");
+			//if (numero > 5)
+			//{
+			//	Console.Write("O número é maior que 5");
 
-				if (numero % 2 == 0 )
-				{
-					Console.WriteLine(" é também é par.");
-				}
-				else
-				{
-					Console.WriteLine(" mas não é par.");
-				}
-			}
+			//	if (numero % 2 == 0 )
+			//	{
+			//		Console.WriteLine(" é também é par.");
+			//	}
+			//	else
+			//	{
+			//		Console.WriteLine(" mas não é par.");
+			//	}
+			//}
 			#endregion
 
+			int numero = 10;
+			string mensagem = "";
+
+			// condição ? true : false;
+
+			//mensagem = numero > 5 ? "Maior que 5" : mensagem = "Menor que 5";
+
+			//if (numero > 5)
+			//{
+			//	mensagem = "Maior que 5";
+			//}
+			//else
+			//{
+			//	mensagem = "Menor que 5";
+			//}
+
 			#region Mostrar
+			Console.WriteLine(mensagem = numero > 5 ? "Maior que 5" : mensagem = "Menor que 5");
 			Console.ReadKey();
 			#endregion
 		}
