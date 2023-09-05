@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controle", "..\Controle\Con
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculadora", "..\Calculadora\Calculadora.csproj", "{16E56AFD-84CD-4ED9-9B19-4996CFD8A96F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ciclos", "..\Repeticao\Ciclos\Ciclos.csproj", "{F670BA5C-30DE-4FFE-B95F-2C9756C0B1F4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{16E56AFD-84CD-4ED9-9B19-4996CFD8A96F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16E56AFD-84CD-4ED9-9B19-4996CFD8A96F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16E56AFD-84CD-4ED9-9B19-4996CFD8A96F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F670BA5C-30DE-4FFE-B95F-2C9756C0B1F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F670BA5C-30DE-4FFE-B95F-2C9756C0B1F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F670BA5C-30DE-4FFE-B95F-2C9756C0B1F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F670BA5C-30DE-4FFE-B95F-2C9756C0B1F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
