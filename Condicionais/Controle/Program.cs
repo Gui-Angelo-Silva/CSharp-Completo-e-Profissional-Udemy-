@@ -10,25 +10,47 @@ namespace Controle
 	{
 		static void Main(string[] args)
 		{
-			int escolha = 1;
+			#region Switch - Case
+			//int escolha = 1;
 
-			switch (escolha)
+			//switch (escolha)
+			//{
+			//	default:
+			//		Console.WriteLine("Opção Default");
+			//		break;
+			//	case 1:
+			//		Console.WriteLine("Opção 1");
+			//		break;
+			//	case 2:
+			//		Console.WriteLine("Opção 2");
+			//		break;
+			//	case 3:
+			//	case 4:
+			//		Console.WriteLine("Opção 3");
+			//		break;
+			//}
+
+			//Console.ReadKey();
+			#endregion
+
+			Inicio:
+			Console.Write("Escolha uma opção: ");
+			int op = int.Parse(Console.ReadLine());
+			int valor = 0;
+
+			switch (op)
 			{
 				default:
-					Console.WriteLine("Opção Default");
-					break;
+					goto Inicio;
 				case 1:
-					Console.WriteLine("Opção 1");
+					valor += 100;
 					break;
 				case 2:
-					Console.WriteLine("Opção 2");
-					break;
-				case 3:
-				case 4:
-					Console.WriteLine("Opção 3");
-					break;
+					valor += 50;
+					goto case 1;
 			}
 
+			Console.WriteLine("Valor final " + valor);
 			Console.ReadKey();
 		}
 	}
