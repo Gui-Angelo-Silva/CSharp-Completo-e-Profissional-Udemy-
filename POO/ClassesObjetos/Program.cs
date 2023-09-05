@@ -35,12 +35,14 @@ namespace ClassesObjetos
 			Console.WriteLine("Pessoa 1: " + p1.nome);
 			Console.WriteLine("Pessoa 1: " + p1.sobrenome);
 			Console.WriteLine("Pessoa 1: " + p1.anoNascimento);
+			p1.Cumprimentar();
 
 			Console.WriteLine();
 
 			Console.WriteLine("Pessoa 2: " + p2.nome);
 			Console.WriteLine("Pessoa 2: " + p2.sobrenome);
 			Console.WriteLine("Pessoa 2: " + p2.anoNascimento);
+			p2.Cumprimentar();
 
 			Console.ReadKey();
 		}
