@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Condicao", "Condicao.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcularIMC", "..\CalcularIMC\CalcularIMC.csproj", "{F20B7E1C-0B1A-4CB5-A0DE-45E99055BCBD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controle", "..\Controle\Controle.csproj", "{D477EE4F-3AEB-4D1A-B824-47B5A3D4C1B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F20B7E1C-0B1A-4CB5-A0DE-45E99055BCBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F20B7E1C-0B1A-4CB5-A0DE-45E99055BCBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F20B7E1C-0B1A-4CB5-A0DE-45E99055BCBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D477EE4F-3AEB-4D1A-B824-47B5A3D4C1B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D477EE4F-3AEB-4D1A-B824-47B5A3D4C1B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D477EE4F-3AEB-4D1A-B824-47B5A3D4C1B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D477EE4F-3AEB-4D1A-B824-47B5A3D4C1B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
