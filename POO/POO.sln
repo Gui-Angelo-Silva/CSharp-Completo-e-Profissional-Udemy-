@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassesObjetos", "ClassesOb
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetodosDasClasses", "MetodosDasClasses\MetodosDasClasses.csproj", "{6D5B72D0-666B-410D-A49C-B7F2CA5FD247}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TermoThis", "TermoThis\TermoThis.csproj", "{54FF275F-6B8E-4052-97AF-71F5C957B12C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{6D5B72D0-666B-410D-A49C-B7F2CA5FD247}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D5B72D0-666B-410D-A49C-B7F2CA5FD247}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D5B72D0-666B-410D-A49C-B7F2CA5FD247}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54FF275F-6B8E-4052-97AF-71F5C957B12C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54FF275F-6B8E-4052-97AF-71F5C957B12C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54FF275F-6B8E-4052-97AF-71F5C957B12C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54FF275F-6B8E-4052-97AF-71F5C957B12C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
