@@ -32,13 +32,22 @@ namespace MetodosDasClasses
 			//Console.WriteLine("Valor 2: " + valor2);
 			#endregion
 
-			string nomeCompleto = m.MontaNome("Guilherme", "Silva");
-			int codigoChar = m.CodigoChar('a');
-			double pi = m.ValorPI();
+			#region Métodos com retorno de valores
+			//string nomeCompleto = m.MontaNome("Guilherme", "Silva");
+			//int codigoChar = m.CodigoChar('a');
+			//double pi = m.ValorPI();
 
-			Console.WriteLine(nomeCompleto);
-			Console.WriteLine(codigoChar);
-			Console.WriteLine(pi);
+			//Console.WriteLine(nomeCompleto);
+			//Console.WriteLine(codigoChar);
+			//Console.WriteLine(pi);
+			#endregion
+
+			m.Cumprimentar();
+			m.Cumprimentar("Guilherme");
+			m.Cumprimentar("Guilherme", 11);
+
+			bool res1 = m.Comparar(100, 50 * 2);
+			bool res2 = m.Comparar("Guilherme", "guilherme");
 
 			Console.ReadKey();
 		}
