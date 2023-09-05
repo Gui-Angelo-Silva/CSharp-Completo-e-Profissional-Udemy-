@@ -10,13 +10,25 @@ namespace Ciclos
 	{
 		static void Main(string[] args)
 		{
+			#region Ciclo while
+			//int valor = 0;
+
+			//while (valor < 10)
+			//{
+			//	Console.WriteLine("O valor é " + valor);
+			//	valor++;
+			//}
+			#endregion
+
+			#region  Ciclo do while
 			int valor = 0;
 
-			while (valor < 10)
+			do
 			{
-				Console.WriteLine("O valor é " + valor);
+				Console.WriteLine("O valor é" + valor);
 				valor++;
-			}
+			} while (valor < 10);
+			#endregion
 
 			Console.ReadKey();
 		}
