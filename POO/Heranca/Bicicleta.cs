@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Heranca
 {
-	class Bicicleta : Veiculo
+	sealed class Bicicleta : Veiculo
 	{
 		public void Pedalar()
 		{
