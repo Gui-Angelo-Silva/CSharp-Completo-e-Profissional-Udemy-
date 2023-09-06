@@ -12,6 +12,11 @@ namespace Heranca
 		{
 			Carro c = new Carro();
 			Bicicleta b = new Bicicleta();
+
+			c.Acelerar();
+			b.Acelerar();
+
+			Console.ReadKey();
 		}
 	}
 }
