@@ -10,11 +10,29 @@ namespace Heranca
 	{
 		static void Main(string[] args)
 		{
-			Carro c = new Carro();
-			Bicicleta b = new Bicicleta();
+			#region Parte 1
+			//Carro c = new Carro();
+			//Bicicleta b = new Bicicleta();
 
-			c.Acelerar();
-			b.Acelerar();
+			//c.Acelerar();
+			//b.Acelerar();
+			#endregion
+
+			Humano humano = new Humano();
+			Pessoa pessoa = new Pessoa();
+			Homem homem = new Homem();
+
+			Console.WriteLine("\nHumano");
+			humano.Olhos();
+			humano.Cabelos();
+
+			Console.WriteLine("\nPessoa");
+			pessoa.Olhos();
+			pessoa.Cabelos();
+
+			Console.WriteLine("\nHomem");
+			homem.Olhos();
+			homem.Cabelos();
 
 			Console.ReadKey();
 		}
