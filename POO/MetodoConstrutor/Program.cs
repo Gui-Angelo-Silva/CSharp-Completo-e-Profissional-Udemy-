@@ -19,6 +19,20 @@ namespace MetodoConstrutor
             Console.WriteLine(p1.anoNascimento);
             Console.WriteLine(p1.idade);
 
+            Pessoa p2 = new Pessoa("Guilherme", "Silva", 2005);
+
+            Console.WriteLine(p2.nome);
+            Console.WriteLine(p2.sobrenome);
+            Console.WriteLine(p2.anoNascimento);
+            Console.WriteLine(p2.idade);
+            
+            Pessoa p3 = new Pessoa("Rodrigo", "Silva", 1976);
+
+            Console.WriteLine(p3.nome);
+            Console.WriteLine(p3.sobrenome);
+            Console.WriteLine(p3.anoNascimento);
+            Console.WriteLine(p3.idade);
+
             Console.ReadKey();
         }
     }
