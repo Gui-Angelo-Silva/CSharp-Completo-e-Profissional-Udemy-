@@ -44,7 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Matematica.cs" />
-    <Compile Include="Pessoa.cs" />
+    <Compile Include="PessoaAtributos.cs" />
+    <Compile Include="PessoaMetodos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

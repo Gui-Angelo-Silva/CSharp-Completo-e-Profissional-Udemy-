@@ -20,15 +20,15 @@ namespace Estaticas
             //Console.WriteLine("Valor 2: " + valor2);
             #endregion
 
-            Pessoa.maiorIdade = 21;
+            PessoaAtributos.maiorIdade = 21;
 
-            Pessoa p1 = new Pessoa();
+            PessoaAtributos p1 = new PessoaAtributos();
             p1.nome = "Guilherme";
-            p1.idade = Pessoa.CalcularIdade(2005);
+            p1.idade = PessoaAtributos.CalcularIdade(2005);
 
             Console.WriteLine(p1.nome);
             Console.WriteLine(p1.idade);
-            Console.WriteLine(Pessoa.maiorIdade);
+            Console.WriteLine(PessoaAtributos.maiorIdade);
 
             Console.ReadKey();
         }
