@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaGeralPOO", "MediaGeralPOO\MediaGeralPOO.csproj", "{9F001EBA-5948-4EF5-A910-BB3226001D4A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F001EBA-5948-4EF5-A910-BB3226001D4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F001EBA-5948-4EF5-A910-BB3226001D4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F001EBA-5948-4EF5-A910-BB3226001D4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F001EBA-5948-4EF5-A910-BB3226001D4A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7D3D0C31-85FF-482A-9DE5-5E132D2EE37F}
+	EndGlobalSection
+EndGlobal
