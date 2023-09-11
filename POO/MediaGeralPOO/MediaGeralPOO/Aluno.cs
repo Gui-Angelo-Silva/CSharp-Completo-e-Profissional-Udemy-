@@ -9,7 +9,7 @@ namespace MediaGeralPOO
 {
 	class Aluno
 	{
-		public string Nome { get; set; }
+		public string Nome { get; private set; }
 
 		private double[] _notas;
 
