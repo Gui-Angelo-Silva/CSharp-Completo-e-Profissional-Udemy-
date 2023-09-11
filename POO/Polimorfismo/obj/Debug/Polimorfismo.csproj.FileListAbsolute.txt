@@ -1,0 +1,8 @@
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\POO\Polimorfismo\bin\Debug\Polimorfismo.exe.config
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\POO\Polimorfismo\bin\Debug\Polimorfismo.exe
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\POO\Polimorfismo\bin\Debug\Polimorfismo.pdb
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\POO\Polimorfismo\obj\Debug\Polimorfismo.csproj.AssemblyReference.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\POO\Polimorfismo\obj\Debug\Polimorfismo.csproj.SuggestedBindingRedirects.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\POO\Polimorfismo\obj\Debug\Polimorfismo.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\POO\Polimorfismo\obj\Debug\Polimorfismo.exe
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\POO\Polimorfismo\obj\Debug\Polimorfismo.pdb
