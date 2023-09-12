@@ -34,7 +34,7 @@
 			// 
 			// btn1
 			// 
-			this.btn1.Location = new System.Drawing.Point(241, 155);
+			this.btn1.Location = new System.Drawing.Point(257, 155);
 			this.btn1.Name = "btn1";
 			this.btn1.Size = new System.Drawing.Size(282, 115);
 			this.btn1.TabIndex = 0;
@@ -49,6 +49,8 @@
 			this.Controls.Add(this.btn1);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Location = new System.Drawing.Point(200, 100);
+			this.MaximumSize = new System.Drawing.Size(800, 600);
+			this.MinimumSize = new System.Drawing.Size(300, 100);
 			this.Name = "Form1";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Minha Aplicação";

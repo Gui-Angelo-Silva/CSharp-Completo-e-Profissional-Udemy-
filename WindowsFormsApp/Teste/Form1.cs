@@ -15,6 +15,8 @@ namespace Teste
 		public Form1()
 		{
 			InitializeComponent();
+			this.Text = "Guilherme Silva";
+			this.Size = new Size(400,200);
 		}
 
 		private void Form1_Load(object sender, EventArgs e)
