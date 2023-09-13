@@ -24,15 +24,19 @@ namespace Teste
 			this.Text = "Carregando a Form";
 		}
 
-		private void Form1_Click(object sender, EventArgs e)
+		private void btn1_Click(object sender, EventArgs e)
 		{
-			this.Text = "Clicando na Form";
-			this.Size = new Size(450, 200);
+			lblTitulo.Text = "Clicou no botão";
 		}
 
-		private void MeuMetodo(object sender, EventArgs e)
+		private void btn1_MouseEnter(object sender, EventArgs e)
 		{
+			lblTitulo.Text = "Evento";
+		}
 
+		private void btn1_MouseLeave(object sender, EventArgs e)
+		{
+			lblTitulo.Text = "Clicou no botão";
 		}
 	}
 }
