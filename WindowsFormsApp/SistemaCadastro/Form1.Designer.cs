@@ -118,9 +118,6 @@
 			// 
 			this.comboEC.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.comboEC.FormattingEnabled = true;
-			this.comboEC.Items.AddRange(new object[] {
-            "Solteiro",
-            "Casado"});
 			this.comboEC.Location = new System.Drawing.Point(230, 122);
 			this.comboEC.Name = "comboEC";
 			this.comboEC.Size = new System.Drawing.Size(396, 33);
