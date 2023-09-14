@@ -19,6 +19,7 @@ namespace ManipularString
 
 		private void Executar_Click(object sender, EventArgs e)
 		{
+			#region Contains / ToString
 			//string texto = "Este tipo de variável é alfanumérica.";
 
 			//if (texto.Contains("tipo"))
@@ -30,10 +31,17 @@ namespace ManipularString
 			//label1.Text = "Não Contém.";
 			//}
 
-			int num = 5400;
-			bool res = true;
+			//int num = 5400;
+			//bool res = true;
 
-			label1.Text = num.ToString();
-        }
+			//label1.Text = num.ToString();
+			#endregion
+
+			string nome = "Guilherme Silva";
+
+			//string nomeMaior = nome.ToUpper();
+
+			label1.Text = nome.ToLower();
+		}
 	}
 }
