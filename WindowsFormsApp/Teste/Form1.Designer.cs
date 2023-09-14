@@ -59,6 +59,7 @@
 			this.lblTitulo.TabIndex = 1;
 			this.lblTitulo.Text = "Título da Aplicação";
 			this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.lblTitulo.Click += new System.EventHandler(this.lblTitulo_Click);
 			// 
 			// Form1
 			// 

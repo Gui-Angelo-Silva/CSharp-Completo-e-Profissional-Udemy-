@@ -31,12 +31,17 @@ namespace Teste
 
 		private void btn1_MouseEnter(object sender, EventArgs e)
 		{
-			lblTitulo.Text = "Evento";
+			lblTitulo.Text = "Evento mouse enter acionado";
 		}
 
 		private void btn1_MouseLeave(object sender, EventArgs e)
 		{
-			lblTitulo.Text = "Clicou no botão";
+			lblTitulo.Text = "Evento mouse leave acionado";
+		}
+
+		private void lblTitulo_Click(object sender, EventArgs e)
+		{
+			btn1.Size = new Size(300, 150);
 		}
 	}
 }
