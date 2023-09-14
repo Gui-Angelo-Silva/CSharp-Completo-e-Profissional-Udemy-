@@ -37,11 +37,13 @@ namespace ManipularString
 			//label1.Text = num.ToString();
 			#endregion
 
-			string nome = "Guilherme Silva";
+			#region ToUpper / ToLower
+			//string nome = "Guilherme Silva";
 
-			//string nomeMaior = nome.ToUpper();
+			////string nomeMaior = nome.ToUpper();
 
-			label1.Text = nome.ToLower();
+			//label1.Text = nome.ToLower();
+			#endregion
 		}
 	}
 }
