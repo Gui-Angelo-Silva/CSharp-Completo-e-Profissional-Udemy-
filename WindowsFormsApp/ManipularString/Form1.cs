@@ -45,12 +45,26 @@ namespace ManipularString
 			//label1.Text = nome.ToLower();
 			#endregion
 
-			string nome = "Guilherme Silva";
+			#region IndexOf / LastIndexOf
+			//string nome = "Guilherme Silva";
 
-			//int indice = nome.IndexOf('u', 5, 4);
-			int indice = nome.LastIndexOf('Silva');
+			////int indice = nome.IndexOf('u', 5, 4);
+			//int indice = nome.LastIndexOf("Silva");
 
-			label1.Text = "Indice: " + indice;
+			//label1.Text = "Indice: " + indice;
+			#endregion
+
+			#region Insert - Replace
+			////string nome = "Angelo Silva";
+			//string nome = "Guilherme Silva";
+
+			////string nomeFinal = nome.Insert(0, "Guilherme ");
+			//string nomeFinal = nome.Replace("Silva", "Angelo");
+
+			//label1.Text = nomeFinal;
+			#endregion
+
+
 		}
 	}
 }
