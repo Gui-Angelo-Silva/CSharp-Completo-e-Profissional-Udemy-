@@ -54,7 +54,7 @@ namespace ManipularString
 			//label1.Text = "Indice: " + indice;
 			#endregion
 
-			#region Insert - Replace
+			#region Insert / Replace
 			////string nome = "Angelo Silva";
 			//string nome = "Guilherme Silva";
 
@@ -62,6 +62,22 @@ namespace ManipularString
 			//string nomeFinal = nome.Replace("Silva", "Angelo");
 
 			//label1.Text = nomeFinal;
+			#endregion
+
+			#region Length / SubString
+			//string nome = "Guilherme Silva";
+
+			////int tam = nome.Length;
+			////label1.Text = "O nome " + nome + " contém " + tam + " letras";
+
+			////for (int i = 0; i < nome.Length; i++)
+			////{
+			////	label1.Text += nome[i] + "\n";
+			////}
+
+			//string parte = nome.Substring(nome.IndexOf(" "));
+
+			//label1.Text = parte;
 			#endregion
 
 
