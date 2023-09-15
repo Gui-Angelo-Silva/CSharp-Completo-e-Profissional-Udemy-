@@ -80,7 +80,13 @@ namespace ManipularString
 			//label1.Text = parte;
 			#endregion
 
+			#region Split
+			string nomes = "Guilherme Angelo Silva";
 
+			char[] separador = { ' ' };
+
+			nomes.Split();
+			#endregion
 		}
 	}
 }
