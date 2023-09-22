@@ -140,8 +140,8 @@ namespace ManipularString
 			#endregion
 
 			#region Format
-			decimal valor = 19.95m;
-			int temp = 32;
+			//decimal valor = 19.95m;
+			//int temp = 32;
 
 			//string s = String.Format("O valor do produto é {0:C2} é a temperatura é {1]", valor, temp);
 
@@ -149,9 +149,9 @@ namespace ManipularString
 
 			//string s = $"O valor do produto é {0:C2} é a temperatura é {1}";
 
-			string s = $"Data: {DateTime.Now:D} e hora {DateTime.Now:T}";
+			//string s = $"Data: {DateTime.Now:D} e hora {DateTime.Now:T}";
 
-			label1.Text = s;
+			//label1.Text = s;
 			#endregion
 		}
 	}
