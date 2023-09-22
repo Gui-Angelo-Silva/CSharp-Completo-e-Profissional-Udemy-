@@ -81,12 +81,17 @@ namespace ManipularString
 			#endregion
 
 			#region Split
-			string nomes = "Guilherme Angelo Silva";
+			string nomes = "Guilherme_Gabriel João-Eduardo";
 
-			char[] separador = { ' ' };
+			char[] separador = { ' ', '-', '_' };
 
-			nomes.Split();
-			#endregion
-		}
+			string[] resultado = nomes.Split(separador);
+
+            foreach (var nome in resultado)
+            {
+				label1.Text += nome + "\n";
+            }
+            #endregion
+        }
 	}
 }
