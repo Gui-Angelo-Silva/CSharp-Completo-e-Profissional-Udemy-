@@ -81,16 +81,34 @@ namespace ManipularString
 			#endregion
 
 			#region Split
-			string nomes = "Guilherme_Gabriel João-Eduardo";
+			//string nomes = "Guilherme_Gabriel João-Eduardo";
 
-			char[] separador = { ' ', '-', '_' };
+			//char[] separador = { ' ', '-', '_' };
 
-			string[] resultado = nomes.Split(separador);
+			//string[] resultado = nomes.Split(separador);
 
-            foreach (var nome in resultado)
+			//         foreach (var nome in resultado)
+			//         {
+			//	label1.Text += nome + "\n";
+			//         }
+			#endregion
+
+			#region StartsWith - EndsWith
+			string nome = "Guilherme";
+
+			//bool res = nome.StartsWith("Gui", StringComparison.OrdinalIgnoreCase);
+
+			bool res = nome.EndsWith("lher", StringComparison.OrdinalIgnoreCase);
+
+            if (res)
             {
-				label1.Text += nome + "\n";
+				label1.Text = "Positivo";
             }
+            else
+            {
+				label1.Text = "Negativo";
+            }
+
             #endregion
         }
 	}
