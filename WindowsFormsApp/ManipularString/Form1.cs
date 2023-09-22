@@ -93,23 +93,34 @@ namespace ManipularString
 			//         }
 			#endregion
 
-			#region StartsWith - EndsWith
-			string nome = "Guilherme";
+			#region StartsWith / EndsWith
+			//string nome = "Guilherme";
 
-			//bool res = nome.StartsWith("Gui", StringComparison.OrdinalIgnoreCase);
+			////bool res = nome.StartsWith("Gui", StringComparison.OrdinalIgnoreCase);
 
-			bool res = nome.EndsWith("lher", StringComparison.OrdinalIgnoreCase);
+			//bool res = nome.EndsWith("lher", StringComparison.OrdinalIgnoreCase);
 
-            if (res)
-            {
-				label1.Text = "Positivo";
-            }
-            else
-            {
-				label1.Text = "Negativo";
-            }
+			//         if (res)
+			//         {
+			//	label1.Text = "Positivo";
+			//         }
+			//         else
+			//         {
+			//	label1.Text = "Negativo";
+			//         }
 
-            #endregion
-        }
+			#endregion
+
+			#region Trim / TrimStart / TrimEnd
+			string mensagem = "   -_5 Ola Guilherme --____   ";
+
+			//char[] c = { ' ', '-', '_', '5'};
+			//string nova = mensagem.Trim(c);
+
+
+			label1.Text = ">" + mensagem.TrimStart() + "<";
+
+			#endregion
+		}
 	}
 }
