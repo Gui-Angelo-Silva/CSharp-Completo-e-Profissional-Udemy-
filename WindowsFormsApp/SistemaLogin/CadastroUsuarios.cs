@@ -19,7 +19,8 @@ namespace SistemaLogin
 
 		public static Usuario UsuarioLogado
 		{
-			get { return _userLogado; }
+			//get { return _userLogado; }
+			get => _userLogado;
 			private set { _userLogado = value; }
 		}
 

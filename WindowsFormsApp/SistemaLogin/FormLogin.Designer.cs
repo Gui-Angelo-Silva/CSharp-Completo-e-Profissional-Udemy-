@@ -30,7 +30,7 @@
 		{
 			this.label1 = new System.Windows.Forms.Label();
 			this.txtUsuario = new System.Windows.Forms.TextBox();
-			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.txtSenha = new System.Windows.Forms.TextBox();
 			this.label2 = new System.Windows.Forms.Label();
 			this.btnEntrar = new System.Windows.Forms.Button();
 			this.btnCancelar = new System.Windows.Forms.Button();
@@ -54,13 +54,13 @@
 			this.txtUsuario.Size = new System.Drawing.Size(540, 44);
 			this.txtUsuario.TabIndex = 1;
 			// 
-			// textBox1
+			// txtSenha
 			// 
-			this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.textBox1.Location = new System.Drawing.Point(17, 122);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(540, 44);
-			this.textBox1.TabIndex = 3;
+			this.txtSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtSenha.Location = new System.Drawing.Point(17, 122);
+			this.txtSenha.Name = "txtSenha";
+			this.txtSenha.Size = new System.Drawing.Size(540, 44);
+			this.txtSenha.TabIndex = 3;
 			// 
 			// label2
 			// 
@@ -98,11 +98,11 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(568, 282);
+			this.ClientSize = new System.Drawing.Size(568, 275);
 			this.ControlBox = false;
 			this.Controls.Add(this.btnCancelar);
 			this.Controls.Add(this.btnEntrar);
-			this.Controls.Add(this.textBox1);
+			this.Controls.Add(this.txtSenha);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.txtUsuario);
 			this.Controls.Add(this.label1);
@@ -117,7 +117,7 @@
 
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.TextBox txtUsuario;
-		private System.Windows.Forms.TextBox textBox1;
+		private System.Windows.Forms.TextBox txtSenha;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Button btnEntrar;
 		private System.Windows.Forms.Button btnCancelar;
