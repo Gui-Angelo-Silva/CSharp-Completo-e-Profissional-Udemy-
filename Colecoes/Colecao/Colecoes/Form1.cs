@@ -222,5 +222,36 @@ namespace Colecoes
 				Lista.Items.Add(nome);
             }
         }
+
+		private void btnQueue_Click(object sender, EventArgs e)
+		{
+			Lista.Items.Clear();
+
+			Queue<string> fila = new Queue<string>();
+			fila.Enqueue("Guilherme");
+			fila.Enqueue("Ana");
+			fila.Enqueue("Gabriel");
+
+			MessageBox.Show(fila.Count.ToString());
+
+			//MessageBox.Show("Primeiro da fila: " + fila.Peek());
+			//MessageBox.Show(fila.Count.ToString());
+			
+			//MessageBox.Show("Primeiro da fila: " + fila.Dequeue());
+			//MessageBox.Show(fila.Count.ToString());
+
+			//MessageBox.Show("Primeiro da fila: " + fila.First());
+			//MessageBox.Show(fila.Count.ToString());
+
+			//MessageBox.Show("Último da fila: " + fila.Last());
+			//MessageBox.Show(fila.Count.ToString());
+
+			Lista.Items.Clear();	
+
+			foreach (string item in fila)
+			{
+				Lista.Items.Add(item);
+			}
+		}
 	}
 }
