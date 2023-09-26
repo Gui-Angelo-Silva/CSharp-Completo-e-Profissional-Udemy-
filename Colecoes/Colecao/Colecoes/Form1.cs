@@ -126,10 +126,32 @@ namespace Colecoes
 
 			alunos.Add(100, "Guilherme");
 
-            foreach (KeyValuePair<int, string> item in alunos)
+			//alunos.ContainsKey(80);
+
+
+			if (alunos.ContainsValue("Guilherme"))
+            {
+				MessageBox.Show("Contém o valor Guilherme");
+            }
+			else
+			{
+				MessageBox.Show("Não contém o valor Guilherme");
+			}
+
+			//alunos.Remove(80);
+			//alunos.Clear();
+
+			//KeyValuePair<int, string> primeiro = alunos.First();
+			//MessageBox.Show("Primeiro " + primeiro.Key + " " + primeiro.Value);
+
+			//MessageBox.Show("Último " + alunos.Last().Key + " " + alunos.Last().Value);
+
+			foreach (KeyValuePair<int, string> item in alunos)
             {
 				Lista.Items.Add(item.Key + " = " + item.Value);
             }
-        }
+
+			//MessageBox.Show("Quantidade de alunos: " + alunos.Count);
+		}
 	}
 }
