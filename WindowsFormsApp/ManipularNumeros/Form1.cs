@@ -52,9 +52,13 @@ namespace ManipularNumeros
 			double seno = Math.Sin(3);
 			double cosseno = Math.Cos(3);
 			double potencia = Math.Pow(2, 10);
-			double raizQuadrada = Math.Sqrt
+			double raizQuadrada = Math.Sqrt(49);
+			double aredonda = Math.Round(158.20);
+			double inteiro = Math.Truncate(32.57);
+			double floor = Math.Floor(52.75);
+			double ceil = Math.Ceiling(52.25);
 
-			lblResultado.Text = potencia.ToString();
+			lblResultado.Text = ceil.ToString();
 		}
 	}
 }
