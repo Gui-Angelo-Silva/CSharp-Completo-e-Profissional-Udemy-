@@ -246,12 +246,54 @@ namespace Colecoes
 			//MessageBox.Show("Último da fila: " + fila.Last());
 			//MessageBox.Show(fila.Count.ToString());
 
-			Lista.Items.Clear();	
 
-			foreach (string item in fila)
+			while (fila.Count > 0) 
+			{
+				MessageBox.Show("Primeiro da fila: " + fila.Peek());
+				MessageBox.Show(fila.Count.ToString());
+
+				Lista.Items.Clear();
+
+				foreach (string item in fila)
+				{
+					Lista.Items.Add(item);
+				}
+			}
+		}
+
+		private void btnStack_Click(object sender, EventArgs e)
+		{
+			Lista.Items.Clear();
+
+			Stack<string> pilha = new Stack<string>();
+
+			pilha.Push("Guilherme");
+			pilha.Push("Ana");
+			pilha.Push("Gabriel");
+
+			MessageBox.Show(pilha.Count.ToString());
+
+			foreach (string item in pilha)
 			{
 				Lista.Items.Add(item);
 			}
-		}
+
+			// MessageBox.Show("Elemento no topo " + pilha.Peek());
+			// MessageBox.Show(pilha.Count.ToString());
+
+			// pilha.Clear();
+
+            while (pilha.Count > 0)
+            {
+				MessageBox.Show("Elemento no topo " + pilha.Pop());
+				MessageBox.Show(pilha.Count.ToString());
+				Lista.Items.Clear();
+
+				foreach (string item in pilha)
+				{
+					Lista.Items.Add(item);
+				}
+			}
+        }
 	}
 }

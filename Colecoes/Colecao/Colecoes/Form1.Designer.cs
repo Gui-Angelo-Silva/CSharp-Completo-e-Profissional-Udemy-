@@ -36,6 +36,7 @@
 			this.btnSortedDictionary = new System.Windows.Forms.Button();
 			this.btnSortedSet = new System.Windows.Forms.Button();
 			this.btnQueue = new System.Windows.Forms.Button();
+			this.btnStack = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// Lista
@@ -45,7 +46,7 @@
 			this.Lista.ItemHeight = 29;
 			this.Lista.Location = new System.Drawing.Point(12, 12);
 			this.Lista.Name = "Lista";
-			this.Lista.Size = new System.Drawing.Size(675, 526);
+			this.Lista.Size = new System.Drawing.Size(675, 497);
 			this.Lista.TabIndex = 0;
 			// 
 			// btnList
@@ -125,11 +126,23 @@
 			this.btnQueue.UseVisualStyleBackColor = true;
 			this.btnQueue.Click += new System.EventHandler(this.btnQueue_Click);
 			// 
+			// btnStack
+			// 
+			this.btnStack.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnStack.Location = new System.Drawing.Point(693, 439);
+			this.btnStack.Name = "btnStack";
+			this.btnStack.Size = new System.Drawing.Size(172, 55);
+			this.btnStack.TabIndex = 8;
+			this.btnStack.Text = "Stack";
+			this.btnStack.UseVisualStyleBackColor = true;
+			this.btnStack.Click += new System.EventHandler(this.btnStack_Click);
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(870, 566);
+			this.ClientSize = new System.Drawing.Size(870, 520);
+			this.Controls.Add(this.btnStack);
 			this.Controls.Add(this.btnQueue);
 			this.Controls.Add(this.btnSortedSet);
 			this.Controls.Add(this.btnSortedDictionary);
@@ -155,6 +168,7 @@
 		private System.Windows.Forms.Button btnSortedDictionary;
 		private System.Windows.Forms.Button btnSortedSet;
 		private System.Windows.Forms.Button btnQueue;
+		private System.Windows.Forms.Button btnStack;
 	}
 }
 
