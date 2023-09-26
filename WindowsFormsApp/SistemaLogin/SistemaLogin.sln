@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManipularNumeros", "..\Mani
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Colecoes", "..\..\Colecoes\Colecao\Colecoes\Colecoes.csproj", "{3350A155-3696-4983-9220-D48172B36594}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JoKenPo", "..\JoKenPo\JoKenPo.csproj", "{54C864EE-3E91-4342-9E37-F843D4485A54}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{3350A155-3696-4983-9220-D48172B36594}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3350A155-3696-4983-9220-D48172B36594}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3350A155-3696-4983-9220-D48172B36594}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54C864EE-3E91-4342-9E37-F843D4485A54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54C864EE-3E91-4342-9E37-F843D4485A54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54C864EE-3E91-4342-9E37-F843D4485A54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54C864EE-3E91-4342-9E37-F843D4485A54}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
