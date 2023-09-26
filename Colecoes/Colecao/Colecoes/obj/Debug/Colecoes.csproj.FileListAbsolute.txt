@@ -1,0 +1,11 @@
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\Colecoes\Colecao\Colecoes\bin\Debug\Colecoes.exe.config
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\Colecoes\Colecao\Colecoes\bin\Debug\Colecoes.exe
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\Colecoes\Colecao\Colecoes\bin\Debug\Colecoes.pdb
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\Colecoes\Colecao\Colecoes\obj\Debug\Colecoes.csproj.AssemblyReference.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\Colecoes\Colecao\Colecoes\obj\Debug\Colecoes.csproj.SuggestedBindingRedirects.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\Colecoes\Colecao\Colecoes\obj\Debug\Colecoes.Form1.resources
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\Colecoes\Colecao\Colecoes\obj\Debug\Colecoes.Properties.Resources.resources
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\Colecoes\Colecao\Colecoes\obj\Debug\Colecoes.csproj.GenerateResource.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\Colecoes\Colecao\Colecoes\obj\Debug\Colecoes.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\Colecoes\Colecao\Colecoes\obj\Debug\Colecoes.exe
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\Colecoes\Colecao\Colecoes\obj\Debug\Colecoes.pdb
