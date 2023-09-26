@@ -114,5 +114,22 @@ namespace Colecoes
 				Lista.Items.Add(item);
 			}
 		}
+
+		private void btnDictionary_Click(object sender, EventArgs e)
+		{
+			Dictionary<int, string> alunos = new Dictionary<int, string>()
+			{
+				{ 150, "Gabriel" },
+				{ 200, "Ana" },
+				{ 80, "Gabriel" }
+			};
+
+			alunos.Add(100, "Guilherme");
+
+            foreach (KeyValuePair<int, string> item in alunos)
+            {
+				Lista.Items.Add(item.Key + " = " + item.Value);
+            }
+        }
 	}
 }
