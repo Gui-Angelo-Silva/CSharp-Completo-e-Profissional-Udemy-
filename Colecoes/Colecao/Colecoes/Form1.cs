@@ -177,5 +177,22 @@ namespace Colecoes
 				Lista.Items.Add(item.Key + " " + item.Value);
             }
         }
+
+		private void btnSortedDictionary_Click(object sender, EventArgs e)
+		{
+			SortedDictionary<int, string> alunos = new SortedDictionary<int, string>()
+			{
+				{ 1000, "Guilherme" },
+				{ 500, "Ana" },
+				{ 800, "Eduardo" }
+			};
+
+			alunos.Add(750, "João");
+
+            foreach (KeyValuePair<int, string> item in alunos)
+            {
+				Lista.Items.Add(item);
+            }
+        }
 	}
 }
