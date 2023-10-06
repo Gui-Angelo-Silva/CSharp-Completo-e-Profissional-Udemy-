@@ -28,13 +28,14 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
 			this.lblTitulo = new System.Windows.Forms.Label();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.pictureBox2 = new System.Windows.Forms.PictureBox();
 			this.pictureResultado = new System.Windows.Forms.PictureBox();
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
-			this.label3 = new System.Windows.Forms.Label();
+			this.lblResultado = new System.Windows.Forms.Label();
 			this.label4 = new System.Windows.Forms.Label();
 			this.label5 = new System.Windows.Forms.Label();
 			this.btnPedra = new System.Windows.Forms.Button();
@@ -100,16 +101,16 @@
 			this.label2.TabIndex = 5;
 			this.label2.Text = "PC";
 			// 
-			// label3
+			// lblResultado
 			// 
-			this.label3.AutoSize = true;
-			this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.ForeColor = System.Drawing.SystemColors.Highlight;
-			this.label3.Location = new System.Drawing.Point(625, 158);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(25, 25);
-			this.label3.TabIndex = 6;
-			this.label3.Text = "?";
+			this.lblResultado.AutoSize = true;
+			this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblResultado.ForeColor = System.Drawing.SystemColors.Highlight;
+			this.lblResultado.Location = new System.Drawing.Point(625, 158);
+			this.lblResultado.Name = "lblResultado";
+			this.lblResultado.Size = new System.Drawing.Size(25, 25);
+			this.lblResultado.TabIndex = 6;
+			this.lblResultado.Text = "?";
 			// 
 			// label4
 			// 
@@ -135,8 +136,8 @@
 			// 
 			// btnPedra
 			// 
-			this.btnPedra.BackgroundImage = global::JoKenPo.Properties.Resources.Pedra;
 			this.btnPedra.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.btnPedra.Image = ((System.Drawing.Image)(resources.GetObject("btnPedra.Image")));
 			this.btnPedra.Location = new System.Drawing.Point(20, 279);
 			this.btnPedra.Name = "btnPedra";
 			this.btnPedra.Size = new System.Drawing.Size(200, 200);
@@ -146,8 +147,8 @@
 			// 
 			// btnPapel
 			// 
-			this.btnPapel.BackgroundImage = global::JoKenPo.Properties.Resources.Papel;
 			this.btnPapel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.btnPapel.Image = ((System.Drawing.Image)(resources.GetObject("btnPapel.Image")));
 			this.btnPapel.Location = new System.Drawing.Point(277, 278);
 			this.btnPapel.Name = "btnPapel";
 			this.btnPapel.Size = new System.Drawing.Size(200, 200);
@@ -157,8 +158,8 @@
 			// 
 			// btnTesoura
 			// 
-			this.btnTesoura.BackgroundImage = global::JoKenPo.Properties.Resources.Tesoura;
 			this.btnTesoura.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.btnTesoura.Image = ((System.Drawing.Image)(resources.GetObject("btnTesoura.Image")));
 			this.btnTesoura.Location = new System.Drawing.Point(531, 278);
 			this.btnTesoura.Name = "btnTesoura";
 			this.btnTesoura.Size = new System.Drawing.Size(200, 200);
@@ -176,7 +177,7 @@
 			this.Controls.Add(this.btnPedra);
 			this.Controls.Add(this.label5);
 			this.Controls.Add(this.label4);
-			this.Controls.Add(this.label3);
+			this.Controls.Add(this.lblResultado);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.pictureResultado);
@@ -202,7 +203,7 @@
 		private System.Windows.Forms.PictureBox pictureResultado;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label label2;
-		private System.Windows.Forms.Label label3;
+		private System.Windows.Forms.Label lblResultado;
 		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.Label label5;
 		private System.Windows.Forms.Button btnPedra;
