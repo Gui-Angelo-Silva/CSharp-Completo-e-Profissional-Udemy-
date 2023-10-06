@@ -1,0 +1,11 @@
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\ClasseImportante\bin\Debug\ClasseImportante.exe.config
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\ClasseImportante\bin\Debug\ClasseImportante.exe
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\ClasseImportante\bin\Debug\ClasseImportante.pdb
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\ClasseImportante\obj\Debug\ClasseImportante.csproj.AssemblyReference.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\ClasseImportante\obj\Debug\ClasseImportante.csproj.SuggestedBindingRedirects.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\ClasseImportante\obj\Debug\ClasseImportante.Form1.resources
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\ClasseImportante\obj\Debug\ClasseImportante.Properties.Resources.resources
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\ClasseImportante\obj\Debug\ClasseImportante.csproj.GenerateResource.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\ClasseImportante\obj\Debug\ClasseImportante.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\ClasseImportante\obj\Debug\ClasseImportante.exe
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\ClasseImportante\obj\Debug\ClasseImportante.pdb

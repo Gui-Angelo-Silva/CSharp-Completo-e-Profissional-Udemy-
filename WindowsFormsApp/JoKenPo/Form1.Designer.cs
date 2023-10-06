@@ -57,6 +57,7 @@
 			// 
 			// pictureBox1
 			// 
+			this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.pictureBox1.Location = new System.Drawing.Point(20, 72);
 			this.pictureBox1.Name = "pictureBox1";
 			this.pictureBox1.Size = new System.Drawing.Size(200, 200);
@@ -65,6 +66,7 @@
 			// 
 			// pictureBox2
 			// 
+			this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.pictureBox2.Location = new System.Drawing.Point(277, 72);
 			this.pictureBox2.Name = "pictureBox2";
 			this.pictureBox2.Size = new System.Drawing.Size(200, 200);
@@ -73,6 +75,7 @@
 			// 
 			// pictureResultado
 			// 
+			this.pictureResultado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.pictureResultado.Location = new System.Drawing.Point(531, 72);
 			this.pictureResultado.Name = "pictureResultado";
 			this.pictureResultado.Size = new System.Drawing.Size(200, 200);
