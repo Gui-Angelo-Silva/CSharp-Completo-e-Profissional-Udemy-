@@ -1,0 +1,11 @@
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\JoKenPo\bin\Debug\JoKenPo.exe.config
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\JoKenPo\bin\Debug\JoKenPo.exe
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\JoKenPo\bin\Debug\JoKenPo.pdb
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\JoKenPo\obj\Debug\JoKenPo.csproj.AssemblyReference.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\JoKenPo\obj\Debug\JoKenPo.csproj.SuggestedBindingRedirects.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\JoKenPo\obj\Debug\JoKenPo.Form1.resources
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\JoKenPo\obj\Debug\JoKenPo.Properties.Resources.resources
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\JoKenPo\obj\Debug\JoKenPo.csproj.GenerateResource.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\JoKenPo\obj\Debug\JoKenPo.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\JoKenPo\obj\Debug\JoKenPo.exe
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\JoKenPo\obj\Debug\JoKenPo.pdb
