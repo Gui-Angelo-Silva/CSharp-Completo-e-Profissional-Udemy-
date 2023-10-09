@@ -119,5 +119,29 @@ namespace ClasseImportante
 
 			lblResultado.Font = letra;
 		}
+
+		private void btnEnvironment_Click(object sender, EventArgs e)
+		{
+			string meusDocs = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+
+			//Environment.CurrentDirectory = "C:\\";
+			//string dirAtual = Environment.CurrentDirectory;
+			//Environment.NewLine;
+			//string varAmb = Environment.GetEnvironmentVariable("Path");
+
+			//string[] discos = Environment.GetLogicalDrives();
+
+			//foreach (string item in discos)
+			//{
+			//	lblResultado.Text += "\n" + item;
+
+			//}
+
+			string user = Environment.UserName;
+			string dominio = Environment.UserDomainName;
+			int cpu = Environment.ProcessorCount;
+
+			lblResultado.Text = cpu.ToString();
+		}
 	}
 }
