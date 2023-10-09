@@ -89,5 +89,24 @@ namespace ClasseImportante
 
 			lblResultado.Text = data.DayOfYear.ToString();
 		}
+
+		private void btnColor_Click(object sender, EventArgs e)
+		{
+			Color vermelho = Color.Red;
+			Color amarelo = Color.Yellow;
+
+			//Color cor1 = Color.FromArgb(255, Color.DarkGreen);
+			Color cor1 = Color.FromArgb(255, 100, 50, 135);
+			Color cor2 = Color.FromKnownColor(KnownColor.Control);
+			Color cor3 = Color.FromName("DarkRed");
+
+			lblResultado.BackColor = cor3;
+			lblResultado.ForeColor = cor2;
+
+			Color cor4 = lblResultado.BackColor;
+
+			btnColor.ForeColor = cor2;
+			btnColor.BackColor = cor4;
+		}
 	}
 }
