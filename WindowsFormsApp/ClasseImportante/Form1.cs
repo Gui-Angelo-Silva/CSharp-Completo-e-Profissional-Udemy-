@@ -108,5 +108,16 @@ namespace ClasseImportante
 			btnColor.ForeColor = cor2;
 			btnColor.BackColor = cor4;
 		}
+
+		private void btnFont_Click(object sender, EventArgs e)
+		{
+			Font letra = new Font("Helvetica, Arial, sans-serif", 24, FontStyle.Italic | FontStyle.Bold, GraphicsUnit.Pixel);
+
+			Font letra2 = new Font(FontFamily.GenericMonospace, 36, FontStyle.Regular, GraphicsUnit.Pixel);
+
+			lblResultado.Text = "Bem vindo ao C#, Trabalho com Fontes";
+
+			lblResultado.Font = letra;
+		}
 	}
 }
