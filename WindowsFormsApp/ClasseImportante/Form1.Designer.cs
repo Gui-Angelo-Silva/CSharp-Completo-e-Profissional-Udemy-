@@ -32,6 +32,7 @@
 			this.lblResultado = new System.Windows.Forms.Label();
 			this.btnAleatorio = new System.Windows.Forms.Button();
 			this.btnTimeSpan = new System.Windows.Forms.Button();
+			this.btnDateTime = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// btnMessageBox
@@ -50,7 +51,7 @@
 			this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblResultado.Location = new System.Drawing.Point(13, 13);
 			this.lblResultado.Name = "lblResultado";
-			this.lblResultado.Size = new System.Drawing.Size(679, 142);
+			this.lblResultado.Size = new System.Drawing.Size(760, 142);
 			this.lblResultado.TabIndex = 1;
 			this.lblResultado.Text = "label1";
 			// 
@@ -76,11 +77,23 @@
 			this.btnTimeSpan.UseVisualStyleBackColor = true;
 			this.btnTimeSpan.Click += new System.EventHandler(this.btnTimeSpan_Click);
 			// 
+			// btnDateTime
+			// 
+			this.btnDateTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnDateTime.Location = new System.Drawing.Point(587, 293);
+			this.btnDateTime.Name = "btnDateTime";
+			this.btnDateTime.Size = new System.Drawing.Size(186, 56);
+			this.btnDateTime.TabIndex = 4;
+			this.btnDateTime.Text = "DateTime";
+			this.btnDateTime.UseVisualStyleBackColor = true;
+			this.btnDateTime.Click += new System.EventHandler(this.btnDateTime_Click);
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(704, 361);
+			this.ClientSize = new System.Drawing.Size(785, 361);
+			this.Controls.Add(this.btnDateTime);
 			this.Controls.Add(this.btnTimeSpan);
 			this.Controls.Add(this.btnAleatorio);
 			this.Controls.Add(this.lblResultado);
@@ -97,6 +110,7 @@
 		private System.Windows.Forms.Label lblResultado;
 		private System.Windows.Forms.Button btnAleatorio;
 		private System.Windows.Forms.Button btnTimeSpan;
+		private System.Windows.Forms.Button btnDateTime;
 	}
 }
 

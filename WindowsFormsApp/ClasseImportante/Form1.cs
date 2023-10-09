@@ -64,5 +64,30 @@ namespace ClasseImportante
 
 			lblResultado.Text = intervalo.ToString();
 		}
+
+		private void btnDateTime_Click(object sender, EventArgs e)
+		{
+			//lblResultado.Text = DateTime.Now.ToString();
+			//lblResultado.Text = DateTime.Today.ToString();
+			//lblResultado.Text = DateTime.DaysInMonth(2023,07).ToString();
+			//lblResultado.Text = DateTime.IsLeapYear(2020).ToString();
+			//lblResultado.Text = DateTime.Now.ToLongDateString();
+			//lblResultado.Text = DateTime.Now.ToShortDateString();
+			//lblResultado.Text = DateTime.Now.ToLongTimeString();
+			//lblResultado.Text = DateTime.Now.ToShortTimeString();
+			//lblResultado.Text = DateTime.Now.ToUniversalTime().ToString();
+			//lblResultado.Text = DateTime.Now.ToString("dd-MM-yyyy HH:mm:ss");
+			
+			DateTime data = new DateTime(2005, 07, 09, 14, 35, 30);
+
+			//lblResultado.Text = data.AddYears(2).ToString();
+
+			//TimeSpan tempo = new TimeSpan(5, 10, 5, 20);
+			//lblResultado.Text = data.Add(tempo).ToString();
+		
+			//lblResultado.Text = data.DayOfWeek.ToString();
+
+			lblResultado.Text = data.DayOfYear.ToString();
+		}
 	}
 }
