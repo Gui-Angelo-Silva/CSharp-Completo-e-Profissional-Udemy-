@@ -30,6 +30,7 @@
 		{
 			this.label1 = new System.Windows.Forms.Label();
 			this.btnSegundo = new System.Windows.Forms.Button();
+			this.btnSegundoFormThread = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -45,19 +46,31 @@
 			// btnSegundo
 			// 
 			this.btnSegundo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnSegundo.Location = new System.Drawing.Point(20, 381);
+			this.btnSegundo.Location = new System.Drawing.Point(20, 385);
 			this.btnSegundo.Name = "btnSegundo";
-			this.btnSegundo.Size = new System.Drawing.Size(165, 57);
+			this.btnSegundo.Size = new System.Drawing.Size(195, 53);
 			this.btnSegundo.TabIndex = 1;
 			this.btnSegundo.Text = "Segundo Form";
 			this.btnSegundo.UseVisualStyleBackColor = true;
 			this.btnSegundo.Click += new System.EventHandler(this.btnSegundo_Click);
+			// 
+			// btnSegundoFormThread
+			// 
+			this.btnSegundoFormThread.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnSegundoFormThread.Location = new System.Drawing.Point(221, 385);
+			this.btnSegundoFormThread.Name = "btnSegundoFormThread";
+			this.btnSegundoFormThread.Size = new System.Drawing.Size(243, 53);
+			this.btnSegundoFormThread.TabIndex = 2;
+			this.btnSegundoFormThread.Text = "Segundo Form Thread";
+			this.btnSegundoFormThread.UseVisualStyleBackColor = true;
+			this.btnSegundoFormThread.Click += new System.EventHandler(this.btnSegundoFormThread_Click);
 			// 
 			// FormMain
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.Controls.Add(this.btnSegundoFormThread);
 			this.Controls.Add(this.btnSegundo);
 			this.Controls.Add(this.label1);
 			this.Name = "FormMain";
@@ -72,6 +85,7 @@
 
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Button btnSegundo;
+		private System.Windows.Forms.Button btnSegundoFormThread;
 	}
 }
 
