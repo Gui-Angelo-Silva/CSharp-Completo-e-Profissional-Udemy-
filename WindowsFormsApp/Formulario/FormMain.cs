@@ -10,11 +10,25 @@ using System.Windows.Forms;
 
 namespace Formulario
 {
-	public partial class Form1 : Form
+	public partial class FormMain : Form
 	{
-		public Form1()
+		public FormMain()
 		{
 			InitializeComponent();
+		}
+
+		private void FormMain_Load(object sender, EventArgs e)
+		{
+
+		}
+
+		private void btnSegundo_Click(object sender, EventArgs e)
+		{
+			this.Hide();
+			FormSegundo frm = new FormSegundo();
+			//frm.Show();
+			frm.ShowDialog();
+			this.Show();
 		}
 	}
 }
