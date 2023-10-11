@@ -80,7 +80,7 @@
 			// 
 			// menuBar
 			// 
-			this.menuBar.BackColor = System.Drawing.SystemColors.Control;
+			this.menuBar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
 			this.menuBar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuFile,
             this.menuHelp,
@@ -94,6 +94,7 @@
 			// 
 			// menuFile
 			// 
+			this.menuFile.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
 			this.menuFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mFileNovo,
             this.mFileAbrir,
@@ -106,6 +107,7 @@
 			// mFileNovo
 			// 
 			this.mFileNovo.Name = "mFileNovo";
+			this.mFileNovo.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
 			this.mFileNovo.Size = new System.Drawing.Size(180, 22);
 			this.mFileNovo.Text = "Novo";
 			this.mFileNovo.Click += new System.EventHandler(this.mFileNovo_Click);
@@ -113,6 +115,7 @@
 			// mFileAbrir
 			// 
 			this.mFileAbrir.Name = "mFileAbrir";
+			this.mFileAbrir.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
 			this.mFileAbrir.Size = new System.Drawing.Size(180, 22);
 			this.mFileAbrir.Text = "Abrir";
 			this.mFileAbrir.Click += new System.EventHandler(this.mFileAbrir_Click);
@@ -125,6 +128,7 @@
 			// mFileSair
 			// 
 			this.mFileSair.Name = "mFileSair";
+			this.mFileSair.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F)));
 			this.mFileSair.Size = new System.Drawing.Size(180, 22);
 			this.mFileSair.Text = "Sair";
 			this.mFileSair.Click += new System.EventHandler(this.mFileSair_Click);
