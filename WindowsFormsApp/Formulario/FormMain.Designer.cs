@@ -37,15 +37,19 @@
 			this.mFileAbrir = new System.Windows.Forms.ToolStripMenuItem();
 			this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
 			this.mFileSair = new System.Windows.Forms.ToolStripMenuItem();
-			this.ajudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.menuHelp = new System.Windows.Forms.ToolStripMenuItem();
+			this.mHelpSobre = new System.Windows.Forms.ToolStripMenuItem();
+			this.mHelpSobreDev = new System.Windows.Forms.ToolStripMenuItem();
+			this.mHelpSobreVersao = new System.Windows.Forms.ToolStripMenuItem();
+			this.comboMenu = new System.Windows.Forms.ToolStripComboBox();
+			this.mPesquisar = new System.Windows.Forms.ToolStripTextBox();
 			this.menuBar.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// lblTitulo
 			// 
 			this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblTitulo.Location = new System.Drawing.Point(16, 84);
+			this.lblTitulo.Location = new System.Drawing.Point(16, 80);
 			this.lblTitulo.Name = "lblTitulo";
 			this.lblTitulo.Size = new System.Drawing.Size(768, 103);
 			this.lblTitulo.TabIndex = 0;
@@ -79,10 +83,12 @@
 			this.menuBar.BackColor = System.Drawing.SystemColors.Control;
 			this.menuBar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuFile,
-            this.ajudaToolStripMenuItem});
+            this.menuHelp,
+            this.comboMenu,
+            this.mPesquisar});
 			this.menuBar.Location = new System.Drawing.Point(0, 0);
 			this.menuBar.Name = "menuBar";
-			this.menuBar.Size = new System.Drawing.Size(800, 24);
+			this.menuBar.Size = new System.Drawing.Size(800, 27);
 			this.menuBar.TabIndex = 3;
 			this.menuBar.Text = "menuStrip1";
 			// 
@@ -94,7 +100,7 @@
             this.toolStripSeparator1,
             this.mFileSair});
 			this.menuFile.Name = "menuFile";
-			this.menuFile.Size = new System.Drawing.Size(37, 20);
+			this.menuFile.Size = new System.Drawing.Size(37, 23);
 			this.menuFile.Text = "File";
 			// 
 			// mFileNovo
@@ -102,12 +108,14 @@
 			this.mFileNovo.Name = "mFileNovo";
 			this.mFileNovo.Size = new System.Drawing.Size(180, 22);
 			this.mFileNovo.Text = "Novo";
+			this.mFileNovo.Click += new System.EventHandler(this.mFileNovo_Click);
 			// 
 			// mFileAbrir
 			// 
 			this.mFileAbrir.Name = "mFileAbrir";
 			this.mFileAbrir.Size = new System.Drawing.Size(180, 22);
 			this.mFileAbrir.Text = "Abrir";
+			this.mFileAbrir.Click += new System.EventHandler(this.mFileAbrir_Click);
 			// 
 			// toolStripSeparator1
 			// 
@@ -119,20 +127,54 @@
 			this.mFileSair.Name = "mFileSair";
 			this.mFileSair.Size = new System.Drawing.Size(180, 22);
 			this.mFileSair.Text = "Sair";
+			this.mFileSair.Click += new System.EventHandler(this.mFileSair_Click);
 			// 
-			// ajudaToolStripMenuItem
+			// menuHelp
 			// 
-			this.ajudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.sobreToolStripMenuItem});
-			this.ajudaToolStripMenuItem.Name = "ajudaToolStripMenuItem";
-			this.ajudaToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-			this.ajudaToolStripMenuItem.Text = "Help";
+			this.menuHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mHelpSobre});
+			this.menuHelp.Name = "menuHelp";
+			this.menuHelp.Size = new System.Drawing.Size(44, 23);
+			this.menuHelp.Text = "Help";
 			// 
-			// sobreToolStripMenuItem
+			// mHelpSobre
 			// 
-			this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
-			this.sobreToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-			this.sobreToolStripMenuItem.Text = "Sobre";
+			this.mHelpSobre.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mHelpSobreDev,
+            this.mHelpSobreVersao});
+			this.mHelpSobre.Name = "mHelpSobre";
+			this.mHelpSobre.Size = new System.Drawing.Size(180, 22);
+			this.mHelpSobre.Text = "Sobre";
+			// 
+			// mHelpSobreDev
+			// 
+			this.mHelpSobreDev.Name = "mHelpSobreDev";
+			this.mHelpSobreDev.Size = new System.Drawing.Size(180, 22);
+			this.mHelpSobreDev.Text = "Desenvolvedor";
+			this.mHelpSobreDev.Click += new System.EventHandler(this.mHelpSobreDev_Click);
+			// 
+			// mHelpSobreVersao
+			// 
+			this.mHelpSobreVersao.Name = "mHelpSobreVersao";
+			this.mHelpSobreVersao.Size = new System.Drawing.Size(180, 22);
+			this.mHelpSobreVersao.Text = "Versão";
+			this.mHelpSobreVersao.Click += new System.EventHandler(this.mHelpSobreVersao_Click);
+			// 
+			// comboMenu
+			// 
+			this.comboMenu.Items.AddRange(new object[] {
+            "Inglês",
+            "Português"});
+			this.comboMenu.Name = "comboMenu";
+			this.comboMenu.Size = new System.Drawing.Size(121, 23);
+			this.comboMenu.SelectedIndexChanged += new System.EventHandler(this.comboMenu_SelectedIndexChanged);
+			// 
+			// mPesquisar
+			// 
+			this.mPesquisar.Font = new System.Drawing.Font("Segoe UI", 9F);
+			this.mPesquisar.Name = "mPesquisar";
+			this.mPesquisar.Size = new System.Drawing.Size(200, 23);
+			this.mPesquisar.KeyUp += new System.Windows.Forms.KeyEventHandler(this.mPesquisar_KeyUp);
 			// 
 			// FormMain
 			// 
@@ -166,8 +208,12 @@
 		private System.Windows.Forms.ToolStripMenuItem mFileAbrir;
 		private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
 		private System.Windows.Forms.ToolStripMenuItem mFileSair;
-		private System.Windows.Forms.ToolStripMenuItem ajudaToolStripMenuItem;
-		private System.Windows.Forms.ToolStripMenuItem sobreToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem menuHelp;
+		private System.Windows.Forms.ToolStripMenuItem mHelpSobre;
+		private System.Windows.Forms.ToolStripMenuItem mHelpSobreDev;
+		private System.Windows.Forms.ToolStripMenuItem mHelpSobreVersao;
+		private System.Windows.Forms.ToolStripComboBox comboMenu;
+		private System.Windows.Forms.ToolStripTextBox mPesquisar;
 	}
 }
 
