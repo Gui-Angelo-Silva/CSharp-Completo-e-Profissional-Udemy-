@@ -26,10 +26,17 @@ namespace Formulario
 		private void btnSegundo_Click(object sender, EventArgs e)
 		{
 			this.Hide();
-			FormSegundo frm = new FormSegundo();
+			FormSegundo frm = new FormSegundo("Bem vindo.");
+			//frm.Mensagem = "Guilherme";
 			//frm.Show();
 			frm.ShowDialog();
-			this.Show();
+
+            if (frm.Mensagem != null)
+            {
+				lblTitulo.Text = frm.Mensagem;
+            }
+
+            this.Show();
 		}
 
 		private void btnSegundoFormThread_Click(object sender, EventArgs e)

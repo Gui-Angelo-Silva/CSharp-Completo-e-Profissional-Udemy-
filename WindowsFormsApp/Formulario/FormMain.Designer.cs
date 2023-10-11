@@ -28,20 +28,20 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.label1 = new System.Windows.Forms.Label();
+			this.lblTitulo = new System.Windows.Forms.Label();
 			this.btnSegundo = new System.Windows.Forms.Button();
 			this.btnSegundoFormThread = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
-			// label1
+			// lblTitulo
 			// 
-			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.Location = new System.Drawing.Point(13, 13);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(775, 103);
-			this.label1.TabIndex = 0;
-			this.label1.Text = "Principal";
-			this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblTitulo.Location = new System.Drawing.Point(13, 13);
+			this.lblTitulo.Name = "lblTitulo";
+			this.lblTitulo.Size = new System.Drawing.Size(775, 103);
+			this.lblTitulo.TabIndex = 0;
+			this.lblTitulo.Text = "Principal";
+			this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// btnSegundo
 			// 
@@ -72,7 +72,7 @@
 			this.ClientSize = new System.Drawing.Size(800, 450);
 			this.Controls.Add(this.btnSegundoFormThread);
 			this.Controls.Add(this.btnSegundo);
-			this.Controls.Add(this.label1);
+			this.Controls.Add(this.lblTitulo);
 			this.Name = "FormMain";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Formulario Principal";
@@ -83,7 +83,7 @@
 
 		#endregion
 
-		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.Label lblTitulo;
 		private System.Windows.Forms.Button btnSegundo;
 		private System.Windows.Forms.Button btnSegundoFormThread;
 	}
