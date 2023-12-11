@@ -45,7 +45,7 @@ namespace Parte010
 
 		private void lista_MouseDoubleClick(object sender, MouseEventArgs e)
 		{
-
+			MessageBox.Show(lista.SelectedItems[0].Text);
 		}
 	}
 }
