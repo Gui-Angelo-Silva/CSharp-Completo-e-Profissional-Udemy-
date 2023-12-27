@@ -1,0 +1,11 @@
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\ControleDasForms\Parte017\bin\Debug\Parte017.exe.config
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\ControleDasForms\Parte017\bin\Debug\Parte017.exe
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\ControleDasForms\Parte017\bin\Debug\Parte017.pdb
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\ControleDasForms\Parte017\obj\Debug\Parte017.csproj.AssemblyReference.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\ControleDasForms\Parte017\obj\Debug\Parte017.csproj.SuggestedBindingRedirects.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\ControleDasForms\Parte017\obj\Debug\Parte017.Form1.resources
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\ControleDasForms\Parte017\obj\Debug\Parte017.Properties.Resources.resources
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\ControleDasForms\Parte017\obj\Debug\Parte017.csproj.GenerateResource.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\ControleDasForms\Parte017\obj\Debug\Parte017.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\ControleDasForms\Parte017\obj\Debug\Parte017.exe
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\ControleDasForms\Parte017\obj\Debug\Parte017.pdb
