@@ -36,6 +36,10 @@ namespace ControleErros
 			{
 				label1.Text = "Erro ! \n" + ex.Message;
 			}
+			finally
+			{
+				MessageBox.Show("Operação finalizada.");
+			}
 		}
 	}
 }
