@@ -29,7 +29,7 @@
 		private void InitializeComponent()
 		{
 			this.lblResultado = new System.Windows.Forms.Label();
-			this.dataGridView1 = new System.Windows.Forms.DataGridView();
+			this.lista = new System.Windows.Forms.DataGridView();
 			this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,7 +43,7 @@
 			this.btnProcurar = new System.Windows.Forms.Button();
 			this.btnExcluir = new System.Windows.Forms.Button();
 			this.btnEditar = new System.Windows.Forms.Button();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.lista)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// lblResultado
@@ -55,21 +55,21 @@
 			this.lblResultado.TabIndex = 0;
 			this.lblResultado.Text = "Resultado";
 			// 
-			// dataGridView1
+			// lista
 			// 
-			this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-			this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+			this.lista.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+			this.lista.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+			this.lista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.lista.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id,
             this.nome,
             this.email});
-			this.dataGridView1.Location = new System.Drawing.Point(12, 230);
-			this.dataGridView1.MultiSelect = false;
-			this.dataGridView1.Name = "dataGridView1";
-			this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-			this.dataGridView1.Size = new System.Drawing.Size(610, 303);
-			this.dataGridView1.TabIndex = 1;
+			this.lista.Location = new System.Drawing.Point(12, 230);
+			this.lista.MultiSelect = false;
+			this.lista.Name = "lista";
+			this.lista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+			this.lista.Size = new System.Drawing.Size(610, 303);
+			this.lista.TabIndex = 1;
 			// 
 			// id
 			// 
@@ -201,12 +201,12 @@
 			this.Controls.Add(this.txtNome);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
-			this.Controls.Add(this.dataGridView1);
+			this.Controls.Add(this.lista);
 			this.Controls.Add(this.lblResultado);
 			this.Name = "Form1";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Form1";
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.lista)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -215,7 +215,7 @@
 		#endregion
 
 		private System.Windows.Forms.Label lblResultado;
-		private System.Windows.Forms.DataGridView dataGridView1;
+		private System.Windows.Forms.DataGridView lista;
 		private System.Windows.Forms.DataGridViewTextBoxColumn id;
 		private System.Windows.Forms.DataGridViewTextBoxColumn nome;
 		private System.Windows.Forms.DataGridViewTextBoxColumn email;

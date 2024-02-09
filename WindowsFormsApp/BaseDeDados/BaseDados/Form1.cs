@@ -69,7 +69,44 @@ namespace BaseDados
 
 		private void btnProcurar_Click(object sender, EventArgs e)
 		{
+			#region
+			string baseDados = Application.StartupPath + @"\db\DBSQLite.db";
+			string strConnection = @"DataSource = " + baseDados + "; Version = 3";
 
+			SQLiteConnection conexao = new SQLiteConnection(strConnection);	
+
+			try
+			{
+				string query = "SELECT * FROM pessoas";
+
+                if (txtNome.Text != "")
+                {
+                    query = "SELECT * FROM pessoas WHERE nome LIKE '" + txtNome.Text + "'";
+                }
+
+				DataTable dados = new DataTable();
+
+				SQLiteDataAdapter adaptador = new SQLiteDataAdapter(query, strConnection);
+
+				conexao.Open();
+
+				adaptador.Fill(dados);
+
+                foreach (DataRow linha in dados.Rows)
+                {
+					lista.Rows.Add(linha.ItemArray);
+                }
+            }
+			catch (Exception ex)
+			{
+				lista.Rows.Clear();
+				lblResultado.Text = ex.Message;
+			}
+			finally 
+			{ 
+				conexao.Close(); 
+			}
+			#endregion
 		}
 
 		private void btnCriarTabela_Click(object sender, EventArgs e)
