@@ -64,5 +64,28 @@ namespace LerEscrever
 
 			reader.Close();
 		}
+
+		private void btnLerBinary_Click(object sender, EventArgs e)
+		{
+			string path = @"c:\teste\arquivo.txt";
+			FileStream file = File.OpenRead(path);
+			BinaryReader reader = new BinaryReader(file);
+
+			//        while (reader.BaseStream.Position != reader.BaseStream.Length)
+			//        {
+			//byte b = reader.ReadByte();
+			//txtConteudo.Text += (char)b;
+			//        }
+
+			//byte[] buffer = reader.ReadBytes((int)reader.BaseStream.Length);
+
+			//         foreach (byte b in buffer)
+			//         {
+			//	txtConteudo.Text += (char)b;
+			//         }
+
+			reader.Close();
+			//buffer = File.ReadAllText(path);
+		}
 	}
 }

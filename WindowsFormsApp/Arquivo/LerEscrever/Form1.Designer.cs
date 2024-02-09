@@ -31,6 +31,7 @@
 			this.btnEscreverTxt = new System.Windows.Forms.Button();
 			this.btnLerTxt = new System.Windows.Forms.Button();
 			this.txtConteudo = new System.Windows.Forms.RichTextBox();
+			this.btnLerBinary = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// btnEscreverTxt
@@ -62,11 +63,22 @@
 			this.txtConteudo.TabIndex = 3;
 			this.txtConteudo.Text = "";
 			// 
+			// btnLerBinary
+			// 
+			this.btnLerBinary.Location = new System.Drawing.Point(363, 386);
+			this.btnLerBinary.Name = "btnLerBinary";
+			this.btnLerBinary.Size = new System.Drawing.Size(169, 52);
+			this.btnLerBinary.TabIndex = 4;
+			this.btnLerBinary.Text = "Ler Binário";
+			this.btnLerBinary.UseVisualStyleBackColor = true;
+			this.btnLerBinary.Click += new System.EventHandler(this.btnLerBinary_Click);
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.Controls.Add(this.btnLerBinary);
 			this.Controls.Add(this.txtConteudo);
 			this.Controls.Add(this.btnLerTxt);
 			this.Controls.Add(this.btnEscreverTxt);
@@ -80,6 +92,7 @@
 		private System.Windows.Forms.Button btnEscreverTxt;
 		private System.Windows.Forms.Button btnLerTxt;
 		private System.Windows.Forms.RichTextBox txtConteudo;
+		private System.Windows.Forms.Button btnLerBinary;
 	}
 }
 
