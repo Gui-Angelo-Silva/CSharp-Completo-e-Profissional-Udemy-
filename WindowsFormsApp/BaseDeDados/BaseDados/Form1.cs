@@ -40,7 +40,7 @@ namespace BaseDados
 				string email = txtEmail.Text;
 
 				comando.CommandText = "INSERT INTO pessoas VALUES (" + id + ", '" + nome + "', '" + email + "')";
-			
+
 				comando.ExecuteNonQuery();
 
 				lblResultado.Text = "Registro inserido SQLite";
@@ -78,9 +78,51 @@ namespace BaseDados
 				comando.ExecuteNonQuery();
 
 				lblResultado.Text = "Registro excluído com sucesso!";
-				comando.Dispose();	
+				comando.Dispose();
 			}
 			catch (Exception ex)
+			{
+				lblResultado.Text = ex.Message;
+			}
+			finally
+			{
+				conexao.Close();
+			}
+			#endregion
+		}
+
+		private void btnEditar_Click(object sender, EventArgs e)
+		{
+			lblResultado.Text = "";
+			lista.Rows.Clear();
+
+			#region SQLite
+			string baseDados = Application.StartupPath + @"\db\DBSQLite.db";
+			string strConnection = @"DataSource = " + baseDados + "; Version = 3";
+
+			SQLiteConnection conexao = new SQLiteConnection(strConnection);
+			
+			try
+			{
+				conexao.Open();
+
+				SQLiteCommand comando = new SQLiteCommand();
+				comando.Connection = conexao;
+
+				int id = (int)lista.SelectedRows[0].Cells[0].Value;
+				string nome = txtNome.Text;
+				string email = txtEmail.Text;
+
+				string query = "UPDATE pessoas SET nome = '" + nome +"', email = '" + email + "' WHERE id LIKE '" + id + "'";
+
+				comando.CommandText = query;
+
+				comando.ExecuteNonQuery();
+
+				lblResultado.Text = "Registro Alterado SQLite";
+				comando.Dispose();
+			}
+			catch (Exception ex) 
 			{
 				lblResultado.Text = ex.Message;
 			}
@@ -91,30 +133,25 @@ namespace BaseDados
 			#endregion
 		}
 
-		private void btnEditar_Click(object sender, EventArgs e)
-		{
-
-		}
-
 		private void btnProcurar_Click(object sender, EventArgs e)
 		{
 			lblResultado.Text = "";
 			lista.Rows.Clear();
 
-			#region
+			#region SQLite
 			string baseDados = Application.StartupPath + @"\db\DBSQLite.db";
 			string strConnection = @"DataSource = " + baseDados + "; Version = 3";
 
-			SQLiteConnection conexao = new SQLiteConnection(strConnection);	
+			SQLiteConnection conexao = new SQLiteConnection(strConnection);
 
 			try
 			{
 				string query = "SELECT * FROM pessoas";
 
-                if (txtNome.Text != "")
-                {
-                    query = "SELECT * FROM pessoas WHERE nome LIKE '" + txtNome.Text + "'";
-                }
+				if (txtNome.Text != "")
+				{
+					query = "SELECT * FROM pessoas WHERE nome LIKE '" + txtNome.Text + "'";
+				}
 
 				DataTable dados = new DataTable();
 
@@ -124,19 +161,19 @@ namespace BaseDados
 
 				adaptador.Fill(dados);
 
-                foreach (DataRow linha in dados.Rows)
-                {
+				foreach (DataRow linha in dados.Rows)
+				{
 					lista.Rows.Add(linha.ItemArray);
-                }
-            }
+				}
+			}
 			catch (Exception ex)
 			{
 				lista.Rows.Clear();
 				lblResultado.Text = ex.Message;
 			}
-			finally 
-			{ 
-				conexao.Close(); 
+			finally
+			{
+				conexao.Close();
 			}
 			#endregion
 		}
@@ -166,9 +203,9 @@ namespace BaseDados
 			{
 				lblResultado.Text = ex.Message;
 			}
-			finally 
-			{ 
-				conexao.Close(); 
+			finally
+			{
+				conexao.Close();
 			}
 			#endregion
 		}
