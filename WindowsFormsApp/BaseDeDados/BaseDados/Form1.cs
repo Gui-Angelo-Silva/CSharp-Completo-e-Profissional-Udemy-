@@ -59,7 +59,36 @@ namespace BaseDados
 
 		private void btnExcluir_Click(object sender, EventArgs e)
 		{
+			#region SQLite
+			string baseDados = Application.StartupPath + @"\db\DBSQLite.db";
+			string strConnection = @"DataSource = " + baseDados + "; Version = 3";
 
+			SQLiteConnection conexao = new SQLiteConnection(strConnection);
+
+			try
+			{
+				conexao.Open();
+
+				SQLiteCommand comando = new SQLiteCommand();
+				comando.Connection = conexao;
+
+				int id = (int)lista.SelectedRows[0].Cells[0].Value;
+				comando.CommandText = "DELETE FROM pessoas WHERE id = '" + id + "'";
+
+				comando.ExecuteNonQuery();
+
+				lblResultado.Text = "Registro excluído com sucesso!";
+				comando.Dispose();	
+			}
+			catch (Exception ex)
+			{
+				lblResultado.Text = ex.Message;
+			}
+			finally 
+			{ 
+				conexao.Close(); 
+			}
+			#endregion
 		}
 
 		private void btnEditar_Click(object sender, EventArgs e)
@@ -69,6 +98,9 @@ namespace BaseDados
 
 		private void btnProcurar_Click(object sender, EventArgs e)
 		{
+			lblResultado.Text = "";
+			lista.Rows.Clear();
+
 			#region
 			string baseDados = Application.StartupPath + @"\db\DBSQLite.db";
 			string strConnection = @"DataSource = " + baseDados + "; Version = 3";
