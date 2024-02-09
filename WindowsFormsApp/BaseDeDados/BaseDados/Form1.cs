@@ -22,7 +22,39 @@ namespace BaseDados
 
 		private void btnInserir_Click(object sender, EventArgs e)
 		{
+			#region
+			string baseDados = Application.StartupPath + @"\db\DBSQLite.db";
+			string strConnection = @"Data Source = " + baseDados + "; Version = 3";
 
+			SQLiteConnection conexao = new SQLiteConnection(strConnection);
+
+			try
+			{
+				conexao.Open();
+
+				SQLiteCommand comando = new SQLiteCommand();
+				comando.Connection = conexao;
+
+				int id = new Random(DateTime.Now.Millisecond).Next(0, 1000);
+				string nome = txtNome.Text;
+				string email = txtEmail.Text;
+
+				comando.CommandText = "INSERT INTO pessoas VALUES (" + id + ", '" + nome + "', '" + email + "')";
+			
+				comando.ExecuteNonQuery();
+
+				lblResultado.Text = "Registro inserido SQLite";
+				comando.Dispose();
+			}
+			catch (Exception ex)
+			{
+				lblResultado.Text = ex.Message;
+			}
+			finally
+			{
+				conexao.Close();
+			}
+			#endregion
 		}
 
 		private void btnExcluir_Click(object sender, EventArgs e)
