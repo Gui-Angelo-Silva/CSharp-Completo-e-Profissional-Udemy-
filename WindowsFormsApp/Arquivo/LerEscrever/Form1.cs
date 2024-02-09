@@ -33,6 +33,36 @@ namespace LerEscrever
 			//writer.Flush();
 			//writer.Dispose();
 			writer.Close();
+			txtConteudo.Clear();
+		}
+
+		private void btnLerTxt_Click(object sender, EventArgs e)
+		{
+			txtConteudo.Clear();
+			string path = @"c:\teste\file.txt";
+			StreamReader reader = new StreamReader(path, Encoding.Default);
+
+			//string txt = reader.ReadToEnd();
+
+			//string linha = reader.ReadLine();
+
+			//while (linha != null)
+			//{
+			//	txtConteudo.Text += linha + "\n";
+			//	linha = reader.ReadLine();	
+			//}
+
+			//linha += reader.ReadLine();
+			//linha += reader.ReadLine();
+
+			//txtConteudo.Text = txt;
+
+			//while (!reader.EndOfStream)
+			//{
+			//	txtConteudo.Text += reader.Read();
+			//}
+
+			reader.Close();
 		}
 	}
 }

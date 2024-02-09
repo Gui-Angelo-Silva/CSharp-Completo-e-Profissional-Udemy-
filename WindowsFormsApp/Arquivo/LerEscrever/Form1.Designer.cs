@@ -28,18 +28,10 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.txtConteudo = new System.Windows.Forms.TextBox();
 			this.btnEscreverTxt = new System.Windows.Forms.Button();
+			this.btnLerTxt = new System.Windows.Forms.Button();
+			this.txtConteudo = new System.Windows.Forms.RichTextBox();
 			this.SuspendLayout();
-			// 
-			// txtConteudo
-			// 
-			this.txtConteudo.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtConteudo.Location = new System.Drawing.Point(13, 13);
-			this.txtConteudo.Multiline = true;
-			this.txtConteudo.Name = "txtConteudo";
-			this.txtConteudo.Size = new System.Drawing.Size(775, 350);
-			this.txtConteudo.TabIndex = 0;
 			// 
 			// btnEscreverTxt
 			// 
@@ -51,24 +43,43 @@
 			this.btnEscreverTxt.UseVisualStyleBackColor = true;
 			this.btnEscreverTxt.Click += new System.EventHandler(this.btnEscreverTxt_Click);
 			// 
+			// btnLerTxt
+			// 
+			this.btnLerTxt.Location = new System.Drawing.Point(188, 386);
+			this.btnLerTxt.Name = "btnLerTxt";
+			this.btnLerTxt.Size = new System.Drawing.Size(169, 52);
+			this.btnLerTxt.TabIndex = 2;
+			this.btnLerTxt.Text = "Ler Txt";
+			this.btnLerTxt.UseVisualStyleBackColor = true;
+			this.btnLerTxt.Click += new System.EventHandler(this.btnLerTxt_Click);
+			// 
+			// txtConteudo
+			// 
+			this.txtConteudo.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtConteudo.Location = new System.Drawing.Point(13, 13);
+			this.txtConteudo.Name = "txtConteudo";
+			this.txtConteudo.Size = new System.Drawing.Size(775, 367);
+			this.txtConteudo.TabIndex = 3;
+			this.txtConteudo.Text = "";
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(800, 450);
-			this.Controls.Add(this.btnEscreverTxt);
 			this.Controls.Add(this.txtConteudo);
+			this.Controls.Add(this.btnLerTxt);
+			this.Controls.Add(this.btnEscreverTxt);
 			this.Name = "Form1";
 			this.Text = "Form1";
 			this.ResumeLayout(false);
-			this.PerformLayout();
 
 		}
 
 		#endregion
-
-		private System.Windows.Forms.TextBox txtConteudo;
 		private System.Windows.Forms.Button btnEscreverTxt;
+		private System.Windows.Forms.Button btnLerTxt;
+		private System.Windows.Forms.RichTextBox txtConteudo;
 	}
 }
 
