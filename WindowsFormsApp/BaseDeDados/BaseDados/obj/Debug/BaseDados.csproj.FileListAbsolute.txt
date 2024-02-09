@@ -1,0 +1,12 @@
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\BaseDeDados\BaseDados\bin\Debug\BaseDados.exe.config
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\BaseDeDados\BaseDados\bin\Debug\BaseDados.exe
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\BaseDeDados\BaseDados\bin\Debug\BaseDados.pdb
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\BaseDeDados\BaseDados\obj\Debug\BaseDados.csproj.AssemblyReference.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\BaseDeDados\BaseDados\obj\Debug\BaseDados.csproj.SuggestedBindingRedirects.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\BaseDeDados\BaseDados\obj\Debug\BaseDados.Form1.resources
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\BaseDeDados\BaseDados\obj\Debug\BaseDados.Properties.Resources.resources
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\BaseDeDados\BaseDados\obj\Debug\BaseDados.csproj.GenerateResource.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\BaseDeDados\BaseDados\obj\Debug\BaseDados.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\BaseDeDados\BaseDados\obj\Debug\BaseDados.csproj.CopyComplete
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\BaseDeDados\BaseDados\obj\Debug\BaseDados.exe
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\BaseDeDados\BaseDados\obj\Debug\BaseDados.pdb

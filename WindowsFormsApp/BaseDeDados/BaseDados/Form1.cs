@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SQLite;
 using System.IO;
+using System.Data.SqlClient;
 
 namespace BaseDados
 {
@@ -41,19 +42,46 @@ namespace BaseDados
 
 		private void btnCriarTabela_Click(object sender, EventArgs e)
 		{
+			#region SQLite
+			string baseDados = Application.StartupPath + @"\db\DBSQLite.db";
+			string strConnection = @"Data Source = " + baseDados + "; Version = 3";
 
+			SQLiteConnection conexao = new SQLiteConnection(strConnection);
+
+			try
+			{
+				conexao.Open();
+
+				SQLiteCommand comando = new SQLiteCommand();
+				comando.Connection = conexao;
+
+				comando.CommandText = "CREATE TABLE pessoas ( id INT NOT NULL PRIMARY KEY, nome NVARCHAR(50), email NVARCHAR(50))";
+				comando.ExecuteNonQuery();
+
+				lblResultado.Text = "Tabela Criada SQLite";
+				comando.Dispose();
+			}
+			catch (Exception ex)
+			{
+				lblResultado.Text = ex.Message;
+			}
+			finally 
+			{ 
+				conexao.Close(); 
+			}
+			#endregion
 		}
 
 		private void btnConectar_Click(object sender, EventArgs e)
 		{
 			#region SQLite
-			string baseDados = Application.StartupPath + @"\db\DBSQLite.sdf";
+			string baseDados = Application.StartupPath + @"\db\DBSQLite.db";
 			string strConnection = @"DataSource = " + baseDados + "; Version = 3";
 
-            if (!File.Exists(baseDados))
-            {
+			if (!File.Exists(baseDados))
+			{
 				SQLiteConnection.CreateFile(baseDados);
-            }
+			}
 
 			SQLiteConnection conexao = new SQLiteConnection(strConnection);
 
@@ -70,7 +98,7 @@ namespace BaseDados
 			{
 				conexao.Close();
 			}
-            #endregion
-        }
+			#endregion
+		}
 	}
 }
