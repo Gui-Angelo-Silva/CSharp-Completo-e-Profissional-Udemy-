@@ -13,6 +13,7 @@ namespace LerEscrever
 {
 	public partial class Form1 : Form
 	{
+		byte[] buffer;
 		public Form1()
 		{
 			InitializeComponent();
@@ -68,6 +69,10 @@ namespace LerEscrever
 		private void btnLerBinary_Click(object sender, EventArgs e)
 		{
 			string path = @"c:\teste\arquivo.txt";
+			string path2 = @"c:\teste\audio.mp3";
+			string path3 = @"c:\teste\video.mp4";
+			string path4 = @"c:\teste\imagem.png";
+
 			FileStream file = File.OpenRead(path);
 			BinaryReader reader = new BinaryReader(file);
 
@@ -77,7 +82,7 @@ namespace LerEscrever
 			//txtConteudo.Text += (char)b;
 			//        }
 
-			//byte[] buffer = reader.ReadBytes((int)reader.BaseStream.Length);
+			byte[] buffer = reader.ReadBytes((int)reader.BaseStream.Length);
 
 			//         foreach (byte b in buffer)
 			//         {
@@ -86,6 +91,23 @@ namespace LerEscrever
 
 			reader.Close();
 			//buffer = File.ReadAllText(path);
+		}
+
+		private void btnEscreverBinary_Click(object sender, EventArgs e)
+		{
+			string path = @"c:\teste\arquivo.txt";
+			string path2 = @"c:\teste\audio.mp3";
+			string path3 = @"c:\teste\video.mp4";
+			string path4 = @"c:\teste\imagem.png";
+
+			FileStream file = File.OpenWrite(path4);
+			BinaryWriter writer = new BinaryWriter(file);
+
+			writer.Write(buffer);
+
+			writer.Flush();
+			writer.Dispose();
+			writer.Close();
 		}
 	}
 }
