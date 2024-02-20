@@ -113,7 +113,7 @@ namespace BaseDados
 				string nome = txtNome.Text;
 				string email = txtEmail.Text;
 
-				string query = "UPDATE pessoas SET nome = '" + nome +"', email = '" + email + "' WHERE id LIKE '" + id + "'";
+				string query = "UPDATE pessoas SET nome = '" + nome + "', email = '" + email + "' WHERE id LIKE '" + id + "'";
 
 				comando.CommandText = query;
 
