@@ -128,5 +128,22 @@ namespace LINQ_1
 			// Converte o retorno para Array
 			lista.Items.AddRange(res2.ToArray());
         }
+
+		private void btnWhere_Click(object sender, EventArgs e)
+		{
+			lista.Items.Clear();	
+			// Operador de Filtragem, a clausula where
+
+			string txt = txtConsultar.Text.ToLower();
+
+			var res = from nome in lista_nome 
+					  where nome.ToLower().Contains(txt) 
+					  select nome;	
+
+			foreach (var n in res)
+			{
+				lista.Items.Add(n);
+			}
+		}
 	}
 }
