@@ -32,6 +32,7 @@
 			this.txtConsultar = new System.Windows.Forms.TextBox();
 			this.btnExecutar = new System.Windows.Forms.Button();
 			this.btnWhere = new System.Windows.Forms.Button();
+			this.btnOrderBy = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// lista
@@ -74,11 +75,23 @@
 			this.btnWhere.UseVisualStyleBackColor = true;
 			this.btnWhere.Click += new System.EventHandler(this.btnWhere_Click);
 			// 
+			// btnOrderBy
+			// 
+			this.btnOrderBy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnOrderBy.Location = new System.Drawing.Point(611, 181);
+			this.btnOrderBy.Name = "btnOrderBy";
+			this.btnOrderBy.Size = new System.Drawing.Size(184, 57);
+			this.btnOrderBy.TabIndex = 4;
+			this.btnOrderBy.Text = "Order By";
+			this.btnOrderBy.UseVisualStyleBackColor = true;
+			this.btnOrderBy.Click += new System.EventHandler(this.btnOrderBy_Click);
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(800, 502);
+			this.Controls.Add(this.btnOrderBy);
 			this.Controls.Add(this.btnWhere);
 			this.Controls.Add(this.btnExecutar);
 			this.Controls.Add(this.txtConsultar);
@@ -96,6 +109,7 @@
 		private System.Windows.Forms.TextBox txtConsultar;
 		private System.Windows.Forms.Button btnExecutar;
 		private System.Windows.Forms.Button btnWhere;
+		private System.Windows.Forms.Button btnOrderBy;
 	}
 }
 

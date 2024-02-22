@@ -121,29 +121,66 @@ namespace LINQ_1
 
 			string txt = txtConsultar.Text;
 
-			IEnumerable<string> res2 = from nome in lista_nome 
-									   where nome.StartsWith(txt) 
+			IEnumerable<string> res2 = from nome in lista_nome
+									   where nome.StartsWith(txt)
 									   select nome;
-			
+
 			// Converte o retorno para Array
 			lista.Items.AddRange(res2.ToArray());
-        }
+		}
 
 		private void btnWhere_Click(object sender, EventArgs e)
 		{
-			lista.Items.Clear();	
+			lista.Items.Clear();
 			// Operador de Filtragem, a clausula where
 
 			string txt = txtConsultar.Text.ToLower();
 
-			var res = from nome in lista_nome 
-					  where nome.ToLower().Contains(txt) 
-					  select nome;	
+			var res = from nome in lista_nome
+					  where nome.ToLower().Contains(txt)
+					  select nome;
 
 			foreach (var n in res)
 			{
 				lista.Items.Add(n);
 			}
 		}
+
+		private void btnOrderBy_Click(object sender, EventArgs e)
+		{
+			// Operador de ordenação
+			lista.Items.Clear();
+			string txt = txtConsultar.Text;
+
+			//var res = from num in lista_numeros 
+			//		  orderby num descending // ascending
+			//		  where num <= 10 
+			//		  select num;
+
+			//var res = from num in lista_numeros
+			//		  orderby num descending // ascending
+			//		  select num;
+
+			//var res = from num in lista_numeros
+			//		  select num;
+
+			//var res = from nome in lista_nome
+			//		  orderby nome
+			//		  select nome;
+
+			//foreach (var n in res)
+			//         {
+			//	lista.Items.Add(n);
+			//         }
+
+			var res = from produto in lista_produtos
+					  orderby produto.Key
+					  select produto;
+
+            foreach (KeyValuePair<string, double> item in res)
+            {
+				lista.Items.Add(item.Key + " R$ " + item.Value);
+            }
+        }
 	}
 }
