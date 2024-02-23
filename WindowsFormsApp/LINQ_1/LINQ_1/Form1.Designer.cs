@@ -33,6 +33,7 @@
 			this.btnExecutar = new System.Windows.Forms.Button();
 			this.btnWhere = new System.Windows.Forms.Button();
 			this.btnOrderBy = new System.Windows.Forms.Button();
+			this.btnGroupBy = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// lista
@@ -42,7 +43,7 @@
 			this.lista.ItemHeight = 25;
 			this.lista.Location = new System.Drawing.Point(12, 12);
 			this.lista.Name = "lista";
-			this.lista.Size = new System.Drawing.Size(592, 479);
+			this.lista.Size = new System.Drawing.Size(592, 654);
 			this.lista.TabIndex = 0;
 			// 
 			// txtConsultar
@@ -86,11 +87,23 @@
 			this.btnOrderBy.UseVisualStyleBackColor = true;
 			this.btnOrderBy.Click += new System.EventHandler(this.btnOrderBy_Click);
 			// 
+			// btnGroupBy
+			// 
+			this.btnGroupBy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnGroupBy.Location = new System.Drawing.Point(611, 244);
+			this.btnGroupBy.Name = "btnGroupBy";
+			this.btnGroupBy.Size = new System.Drawing.Size(184, 57);
+			this.btnGroupBy.TabIndex = 5;
+			this.btnGroupBy.Text = "Group By";
+			this.btnGroupBy.UseVisualStyleBackColor = true;
+			this.btnGroupBy.Click += new System.EventHandler(this.btnGroupBy_Click);
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(800, 502);
+			this.ClientSize = new System.Drawing.Size(800, 684);
+			this.Controls.Add(this.btnGroupBy);
 			this.Controls.Add(this.btnOrderBy);
 			this.Controls.Add(this.btnWhere);
 			this.Controls.Add(this.btnExecutar);
@@ -110,6 +123,7 @@
 		private System.Windows.Forms.Button btnExecutar;
 		private System.Windows.Forms.Button btnWhere;
 		private System.Windows.Forms.Button btnOrderBy;
+		private System.Windows.Forms.Button btnGroupBy;
 	}
 }
 

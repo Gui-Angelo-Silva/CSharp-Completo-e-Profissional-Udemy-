@@ -182,5 +182,25 @@ namespace LINQ_1
 				lista.Items.Add(item.Key + " R$ " + item.Value);
             }
         }
+
+		private void btnGroupBy_Click(object sender, EventArgs e)
+		{
+			// Operadores de Agrupamento
+			lista.Items.Clear();
+			txtConsultar.Text = "";
+
+			var res = from estado in lista_estado
+					  group estado by estado.Value;
+
+            foreach (var grupo in res)
+            {
+				lista.Items.Add(grupo.Key);
+
+                foreach (var estado in grupo)
+                {
+					lista.Items.Add("       " + estado.Key);
+                }
+            }
+        }
 	}
 }
