@@ -282,5 +282,64 @@ namespace LINQ_1
 			int numero = consulta.FirstOrDefault();
 			lista.Items.Add(numero);
 		}
+
+		private void btnLINQLambda_Click(object sender, EventArgs e)
+		{
+			#region Comum
+			//var cons1 = from nome in lista_nome
+			//			select nome; 
+			//lista.Items.AddRange(cons1.ToArray());
+
+			//var cons2 = from nome in lista_nome
+			//			where nome.StartsWith("G")
+			//			select nome;
+			//lista.Items.AddRange(cons2.ToArray());
+
+			//var cons3 = from nome in lista_nome
+			//			orderby nome
+			//			select nome;
+
+			//lista.Items.AddRange(cons3.ToArray());
+			//var cons4 = from estado in lista_estado
+			//			group estado
+			//			by estado.Value;
+
+			//foreach (var grupo in cons4)
+			//{
+			//	lista.Items.Add(grupo.Key);
+
+			//	foreach (var estado in grupo)
+			//	{
+			//		lista.Items.Add("     " + estado.Key);
+			//	}
+			//}
+			#endregion
+
+			#region Lambda
+			//var cons1L = lista_nome.Select(nome => nome);
+			//lista.Items.AddRange(cons1.ToArray());
+
+			//var cons2L = lista_nome.Where((nome) => nome.StartsWith("G"));
+			//lista.Items.AddRange(cons2L.ToArray());
+
+			//var cons3L = lista_nome.OrderBy(nome => nome);
+			//var cons3L2 = lista_nome.OrderByDescending(nome => nome);
+			//lista.Items.AddRange(cons3L.ToArray());
+			//lista.Items.AddRange(cons3L2.ToArray());
+
+			var cons4L = lista_estado.GroupBy(estado => estado.Value);
+
+			foreach (var grupo in cons4L)
+			{
+				lista.Items.Add(grupo.Key);
+
+				foreach (var estado in grupo)
+				{
+					lista.Items.Add("     " + estado.Key);
+				}
+			}
+			#endregion
+
+		}
 	}
 }

@@ -36,6 +36,7 @@
 			this.btnGroupBy = new System.Windows.Forms.Button();
 			this.btnAgregacao = new System.Windows.Forms.Button();
 			this.btnElementOperators = new System.Windows.Forms.Button();
+			this.btnLINQLambda = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// lista
@@ -45,7 +46,7 @@
 			this.lista.ItemHeight = 25;
 			this.lista.Location = new System.Drawing.Point(12, 12);
 			this.lista.Name = "lista";
-			this.lista.Size = new System.Drawing.Size(592, 654);
+			this.lista.Size = new System.Drawing.Size(592, 479);
 			this.lista.TabIndex = 0;
 			// 
 			// txtConsultar
@@ -122,11 +123,23 @@
 			this.btnElementOperators.UseVisualStyleBackColor = true;
 			this.btnElementOperators.Click += new System.EventHandler(this.btnElementOperators_Click);
 			// 
+			// btnLINQLambda
+			// 
+			this.btnLINQLambda.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnLINQLambda.Location = new System.Drawing.Point(610, 433);
+			this.btnLINQLambda.Name = "btnLINQLambda";
+			this.btnLINQLambda.Size = new System.Drawing.Size(219, 57);
+			this.btnLINQLambda.TabIndex = 8;
+			this.btnLINQLambda.Text = "LINQ Lambda";
+			this.btnLINQLambda.UseVisualStyleBackColor = true;
+			this.btnLINQLambda.Click += new System.EventHandler(this.btnLINQLambda_Click);
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(841, 684);
+			this.ClientSize = new System.Drawing.Size(841, 503);
+			this.Controls.Add(this.btnLINQLambda);
 			this.Controls.Add(this.btnElementOperators);
 			this.Controls.Add(this.btnAgregacao);
 			this.Controls.Add(this.btnGroupBy);
@@ -152,6 +165,7 @@
 		private System.Windows.Forms.Button btnGroupBy;
 		private System.Windows.Forms.Button btnAgregacao;
 		private System.Windows.Forms.Button btnElementOperators;
+		private System.Windows.Forms.Button btnLINQLambda;
 	}
 }
 
