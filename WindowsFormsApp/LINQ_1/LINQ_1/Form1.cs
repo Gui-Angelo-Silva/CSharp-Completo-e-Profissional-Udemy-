@@ -177,11 +177,11 @@ namespace LINQ_1
 					  orderby produto.Key
 					  select produto;
 
-            foreach (KeyValuePair<string, double> item in res)
-            {
+			foreach (KeyValuePair<string, double> item in res)
+			{
 				lista.Items.Add(item.Key + " R$ " + item.Value);
-            }
-        }
+			}
+		}
 
 		private void btnGroupBy_Click(object sender, EventArgs e)
 		{
@@ -192,15 +192,74 @@ namespace LINQ_1
 			var res = from estado in lista_estado
 					  group estado by estado.Value;
 
-            foreach (var grupo in res)
-            {
+			foreach (var grupo in res)
+			{
 				lista.Items.Add(grupo.Key);
 
-                foreach (var estado in grupo)
-                {
+				foreach (var estado in grupo)
+				{
 					lista.Items.Add("       " + estado.Key);
-                }
-            }
-        }
+				}
+			}
+		}
+
+		private void btnAgregacao_Click(object sender, EventArgs e)
+		{
+			#region Contagem
+			//int cont1 = lista_nome.Count();
+			//int cont2 = (from nome in lista_nome 
+			//			where nome.StartsWith("G") 
+			//			select nome).Count();
+
+			//lista.Items.Add(cont1 + " nomes.");
+			//lista.Items.Add(cont2 + " nomes começados com a letra G.");
+
+			//long contagem = lista_numeros.LongCount();
+			#endregion
+
+			#region Média
+			//double media1 = lista_numeros.Average();
+			//lista.Items.Add(media1 + " média dos valores na lista de números.");
+
+			//var res1 = from num in lista_numeros 
+			//		   where num < 10 
+			//		   select num;
+
+			//double media2 = res1.Average();
+			//lista.Items.Add(media2 + " média menores que 10.");
+			#endregion
+
+			#region Soma
+			//int soma1 = lista_numeros.Sum();
+			//lista.Items.Add(soma1 + " soma dos valores.");
+
+			//var res2 = from num in lista_numeros
+			//		   where num < 10
+			//		   select num;
+
+			//int soma2 = res2.Sum();
+			//lista.Items.Add(soma2 + " soma dos valores < 10.");
+			#endregion
+
+			#region Mínimo e Máximo
+			// Também aplicados nas consultas.
+			//lista.Items.Add(lista_numeros.Min() + " valor mínimo em lista números.");
+			//lista.Items.Add(lista_numeros.Max() + " valor máximo em lista números.");
+			#endregion
+
+			string maiorNome = lista_nome.Aggregate((maior, proximo) =>
+			{
+				if (maior.Length > proximo.Length)
+				{
+					return maior;
+				}
+				else
+				{
+					return proximo;
+				}
+			});
+
+			lista.Items.Add(maiorNome + " é o maior nome da lista.");
+		}
 	}
 }
