@@ -35,6 +35,7 @@
 			this.btnOrderBy = new System.Windows.Forms.Button();
 			this.btnGroupBy = new System.Windows.Forms.Button();
 			this.btnAgregacao = new System.Windows.Forms.Button();
+			this.btnElementOperators = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// lista
@@ -110,11 +111,23 @@
 			this.btnAgregacao.UseVisualStyleBackColor = true;
 			this.btnAgregacao.Click += new System.EventHandler(this.btnAgregacao_Click);
 			// 
+			// btnElementOperators
+			// 
+			this.btnElementOperators.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnElementOperators.Location = new System.Drawing.Point(610, 370);
+			this.btnElementOperators.Name = "btnElementOperators";
+			this.btnElementOperators.Size = new System.Drawing.Size(219, 57);
+			this.btnElementOperators.TabIndex = 7;
+			this.btnElementOperators.Text = "Element Operators";
+			this.btnElementOperators.UseVisualStyleBackColor = true;
+			this.btnElementOperators.Click += new System.EventHandler(this.btnElementOperators_Click);
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(841, 684);
+			this.Controls.Add(this.btnElementOperators);
 			this.Controls.Add(this.btnAgregacao);
 			this.Controls.Add(this.btnGroupBy);
 			this.Controls.Add(this.btnOrderBy);
@@ -138,6 +151,7 @@
 		private System.Windows.Forms.Button btnOrderBy;
 		private System.Windows.Forms.Button btnGroupBy;
 		private System.Windows.Forms.Button btnAgregacao;
+		private System.Windows.Forms.Button btnElementOperators;
 	}
 }
 

@@ -261,5 +261,26 @@ namespace LINQ_1
 
 			lista.Items.Add(maiorNome + " é o maior nome da lista.");
 		}
+
+		private void btnElementOperators_Click(object sender, EventArgs e)
+		{
+			lista.Items.Clear();
+
+			int primeiro = lista_numeros.FirstOrDefault();
+			lista.Items.Add(primeiro);
+
+			int ultimo = lista_numeros.LastOrDefault();
+			lista.Items.Add(ultimo);
+
+			int elementoEm = lista_numeros.ElementAtOrDefault(3);
+			lista.Items.Add(elementoEm);
+
+			var consulta = from num in lista_numeros
+						   where num > 1000
+						   select num;
+
+			int numero = consulta.FirstOrDefault();
+			lista.Items.Add(numero);
+		}
 	}
 }
