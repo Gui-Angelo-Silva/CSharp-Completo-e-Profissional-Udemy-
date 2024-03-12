@@ -44,7 +44,7 @@
 			this.lista.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lista.FormattingEnabled = true;
 			this.lista.ItemHeight = 25;
-			this.lista.Location = new System.Drawing.Point(12, 12);
+			this.lista.Location = new System.Drawing.Point(13, 12);
 			this.lista.Name = "lista";
 			this.lista.Size = new System.Drawing.Size(592, 479);
 			this.lista.TabIndex = 0;
