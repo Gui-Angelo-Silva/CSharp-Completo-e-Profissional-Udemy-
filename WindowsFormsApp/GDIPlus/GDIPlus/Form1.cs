@@ -32,7 +32,33 @@ namespace GDIPlus
 			Graphics desenhador = Graphics.FromImage(folha);
 
 			// Desenhar na folha
-			desenhador.Clear(Color.Red);
+			desenhador.Clear(Color.White);
+
+			#region Linhas
+			Brush pincel = new SolidBrush(Color.Red);
+			Pen lapis1 = new Pen(Color.Black, 5);
+			Point ponto1 = new Point(100, 200);
+			Point ponto2 = new Point(400, 100);
+
+
+			Pen lapis2 = new Pen(Color.Black, 10);
+			Point ponto3 = new Point(0, 0);
+			Point ponto4 = new Point(100, 200);
+
+			//desenhador.DrawLine(lapis1, ponto1, ponto2);
+			//desenhador.DrawLine(lapis2, ponto3, ponto4);
+
+			Point[] pontos = 
+			{
+				new Point(50,50),
+				new Point(250,50),
+				new Point(250,150),
+				new Point(100,80),
+				new Point(85,140),
+			};
+
+			desenhador.DrawLines(lapis1, pontos);
+			#endregion
 
 			// Utilizar num picture box
 			pictureBox1.BackgroundImage = folha;
