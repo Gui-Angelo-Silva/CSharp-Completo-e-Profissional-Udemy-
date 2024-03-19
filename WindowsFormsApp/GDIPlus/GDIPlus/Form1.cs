@@ -122,7 +122,25 @@ namespace GDIPlus
 
 			#endregion
 
+			#region Curvas
 
+			Pen lapis1 = new Pen(Color.Black, 5);
+
+			Point[] pontos =
+			{
+				new Point(100, 50),
+				new Point(300, 300),
+				new Point(300, 100),
+				new Point(500, 250),
+				new Point(300, 200)
+			};
+
+			//desenhador.DrawCurve(lapis1, pontos, 1.5f);
+			//desenhador.DrawClosedCurve(lapis1, pontos, 1.5f, FillMode.Winding);
+
+			desenhador.FillClosedCurve(Brushes.Red, pontos, FillMode.Winding, 1.5f);
+
+			#endregion
 
 			// Utilizar num picture box
 			pictureBox1.BackgroundImage = folha;
