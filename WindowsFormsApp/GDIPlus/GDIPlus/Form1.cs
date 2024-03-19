@@ -63,31 +63,47 @@ namespace GDIPlus
 
 			#region Retângulos
 
-			Pen lapis1 = new Pen(Color.Black, 5);
-			Pen lapis2 = new Pen(Color.Blue, 10);
-			Rectangle rect1 = new Rectangle(100, 50, 300, 200);
-			Rectangle rect2 = new Rectangle(50, 850, 120, 40);
-			Rectangle rect3 = new Rectangle(120, 20, 145, 100);
-			Rectangle rect4 = new Rectangle(75, 200, 250, 100);
+			//Pen lapis1 = new Pen(Color.Black, 5);
+			//Pen lapis2 = new Pen(Color.Blue, 10);
+			//Rectangle rect1 = new Rectangle(100, 50, 300, 200);
+			//Rectangle rect2 = new Rectangle(50, 850, 120, 40);
+			//Rectangle rect3 = new Rectangle(120, 20, 145, 100);
+			//Rectangle rect4 = new Rectangle(75, 200, 250, 100);
 
-			//desenhador.DrawRectangle(lapis1, rect1);
-			//desenhador.DrawRectangle(lapis2, 0, 0, 250, 250);
+			////desenhador.DrawRectangle(lapis1, rect1);
+			////desenhador.DrawRectangle(lapis2, 0, 0, 250, 250);
 
-			Rectangle[] retangulos =
-			{
-				rect1, rect2, rect3, rect4, new Rectangle(10,20,240,85)
-			};
+			//Rectangle[] retangulos =
+			//{
+			//	rect1, rect2, rect3, rect4, new Rectangle(10,20,240,85)
+			//};
 
-			//desenhador.DrawRectangles(lapis1, retangulos);
+			////desenhador.DrawRectangles(lapis1, retangulos);
 
-			Brush pincel1 = new SolidBrush(Color.Red);
-			Brush pincel2 = new LinearGradientBrush(rect4, Color.Green, Color.Yellow, 90);
+			//Brush pincel1 = new SolidBrush(Color.Red);
+			//Brush pincel2 = new LinearGradientBrush(rect4, Color.Green, Color.Yellow, 90);
 
-			//desenhador.FillRectangle(pincel2, rect1);
+			////desenhador.FillRectangle(pincel2, rect1);
 
-			desenhador.FillRectangles(pincel1, retangulos);
+			//desenhador.FillRectangles(pincel1, retangulos);
 
 			#endregion
+
+			#region Elipse e Círculos
+
+			//Pen lapis1 = new Pen(Color.Black, 5);
+			//Rectangle rect1 = new Rectangle(150, 50, 200, 200);
+
+			////desenhador.DrawRectangle(lapis1 , rect1);
+			////desenhador.DrawEllipse(lapis1, rect1);
+
+			////Brush pincel = new SolidBrush(Color.Yellow);
+
+			//desenhador.FillEllipse(Brushes.Gray, rect1);
+
+			#endregion
+
+
 
 			// Utilizar num picture box
 			pictureBox1.BackgroundImage = folha;
