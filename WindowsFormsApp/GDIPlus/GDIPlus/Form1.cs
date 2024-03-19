@@ -103,6 +103,25 @@ namespace GDIPlus
 
 			#endregion
 
+			#region Polígonos
+
+			//Pen lapis1 = new Pen(Color.Black, 5);
+
+			//Point[] pontos =
+			//{
+			//	new Point(100, 100),
+			//	new Point(300, 200),
+			//	new Point(250, 250),
+			//	new Point(100, 200)
+			//};
+
+			////desenhador.DrawPolygon(lapis1, pontos);
+
+			//Brush pincel = new LinearGradientBrush(new Rectangle(0,0,500,500), Color.Red, Color.Yellow, 45);
+			//desenhador.FillPolygon(pincel, pontos);
+
+			#endregion
+
 
 
 			// Utilizar num picture box
