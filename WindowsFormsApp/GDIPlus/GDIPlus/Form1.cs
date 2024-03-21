@@ -154,27 +154,39 @@ namespace GDIPlus
 
 			#region Beziers / Beziers 
 
+			//Pen lapis = new Pen(Color.Black, 5);
+			//Point p1 = new Point(50, 300);
+			//Point p2 = new Point(200, 400);
+			//Point p3 = new Point(300, 10);
+			//Point p4 = new Point(500, 100);
+
+			//desenhador.DrawBezier(lapis, p1, p2, p3, p4);
+
+			//Point[] pontos =
+			//{
+			//	new Point(50, 300),
+			//	new Point(150, 350),
+			//	new Point(300, 10),
+			//	new Point(400, 150),
+			//	new Point(500, 400),
+			//	new Point(550, 10),
+			//	new Point(600, 100)
+			//};
+
+
+			//desenhador.DrawBeziers(lapis, pontos);
+
+			#endregion
+
+			#region Pie
+
 			Pen lapis = new Pen(Color.Black, 5);
-			Point p1 = new Point(50, 300);
-			Point p2 = new Point(200, 400);
-			Point p3 = new Point(300, 10);
-			Point p4 = new Point(500, 100);
+			Rectangle rect = new Rectangle(50, 50, 300, 300);
 
-			desenhador.DrawBezier(lapis, p1, p2, p3, p4);
+			//desenhador.DrawPie(lapis, rect, 270, 90);
 
-			Point[] pontos =
-			{
-				new Point(50, 300),
-				new Point(150, 350),
-				new Point(300, 10),
-				new Point(400, 150),
-				new Point(500, 400),
-				new Point(550, 10),
-				new Point(600, 100)
-			};
-
-
-			desenhador.DrawBeziers(lapis, pontos);
+			desenhador.FillPie(Brushes.Red, rect, 270, 270);
+			//desenhador.DrawRectangle(lapis, rect);
 
 			#endregion
 
