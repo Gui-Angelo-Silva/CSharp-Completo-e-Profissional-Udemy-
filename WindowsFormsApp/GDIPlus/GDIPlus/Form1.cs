@@ -192,15 +192,36 @@ namespace GDIPlus
 
 			#region Path
 
-			Pen lapis = new Pen(Color.Black);
-			GraphicsPath graphicsPath = new GraphicsPath(FillMode.Alternate);
+			//Pen lapis = new Pen(Color.Black);
+			//GraphicsPath graphicsPath = new GraphicsPath(FillMode.Alternate);
 
-			graphicsPath.AddEllipse(new RectangleF(10, 10, 100, 150));
-			graphicsPath.AddEllipse(new RectangleF(50, 10, 100, 150));
-			graphicsPath.AddRectangle(new RectangleF(120, 50, 150, 100));
+			//graphicsPath.AddEllipse(new RectangleF(10, 10, 100, 150));
+			//graphicsPath.AddEllipse(new RectangleF(50, 10, 100, 150));
+			//graphicsPath.AddRectangle(new RectangleF(120, 50, 150, 100));
 
-			//desenhador.DrawPath(lapis, graphicsPath);
-			desenhador.FillPath(Brushes.Red, graphicsPath);
+			////desenhador.DrawPath(lapis, graphicsPath);
+			//desenhador.FillPath(Brushes.Red, graphicsPath);
+
+			#endregion
+
+			#region Strings
+
+			string texto = "Guilherme Silva";
+			Font letra = new Font("Arial", 18, FontStyle.Bold, GraphicsUnit.Point);
+			Brush pincel = new SolidBrush(Color.Black);
+			Point ponto = new Point(10, 20);
+			Rectangle rect = new Rectangle(10, 20, 550, 350);
+			StringFormat alinhamento = new StringFormat();
+			
+			//desenhador.DrawRectangle(new Pen(Color.Red), rect);
+			//desenhador.DrawString(texto, letra, pincel, ponto);
+
+			alinhamento.Alignment = StringAlignment.Center;
+			alinhamento.LineAlignment = StringAlignment.Far;
+			//alinhamento.FormatFlags = StringFormatFlags.NoWrap;
+			
+			desenhador.DrawString("Titulo da Pagina", letra, Brushes.Red, rect, alinhamento);
+			desenhador.DrawString(texto, letra, pincel, new Rectangle(10, 80, 550, 300));
 
 			#endregion
 
