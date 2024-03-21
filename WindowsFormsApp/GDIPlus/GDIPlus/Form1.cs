@@ -124,21 +124,31 @@ namespace GDIPlus
 
 			#region Curvas
 
-			Pen lapis1 = new Pen(Color.Black, 5);
+			//Pen lapis1 = new Pen(Color.Black, 5);
 
-			Point[] pontos =
-			{
-				new Point(100, 50),
-				new Point(300, 300),
-				new Point(300, 100),
-				new Point(500, 250),
-				new Point(300, 200)
-			};
+			//Point[] pontos =
+			//{
+			//	new Point(100, 50),
+			//	new Point(300, 300),
+			//	new Point(300, 100),
+			//	new Point(500, 250),
+			//	new Point(300, 200)
+			//};
 
-			//desenhador.DrawCurve(lapis1, pontos, 1.5f);
-			//desenhador.DrawClosedCurve(lapis1, pontos, 1.5f, FillMode.Winding);
+			////desenhador.DrawCurve(lapis1, pontos, 1.5f);
+			////desenhador.DrawClosedCurve(lapis1, pontos, 1.5f, FillMode.Winding);
 
-			desenhador.FillClosedCurve(Brushes.Red, pontos, FillMode.Winding, 1.5f);
+			//desenhador.FillClosedCurve(Brushes.Red, pontos, FillMode.Winding, 1.5f);
+
+			#endregion
+
+			#region Arcos
+
+			Pen lapis = new Pen(Color.Black);
+			Rectangle rect = new Rectangle(100, 50, 400, 250);
+			
+			//desenhador.DrawRectangle(lapis, rect);
+			desenhador.DrawArc(lapis, rect, 45f, 250f);
 
 			#endregion
 
