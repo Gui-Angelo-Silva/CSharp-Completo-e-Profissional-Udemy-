@@ -206,22 +206,37 @@ namespace GDIPlus
 
 			#region Strings
 
-			string texto = "Guilherme Silva";
-			Font letra = new Font("Arial", 18, FontStyle.Bold, GraphicsUnit.Point);
-			Brush pincel = new SolidBrush(Color.Black);
-			Point ponto = new Point(10, 20);
-			Rectangle rect = new Rectangle(10, 20, 550, 350);
-			StringFormat alinhamento = new StringFormat();
-			
-			//desenhador.DrawRectangle(new Pen(Color.Red), rect);
-			//desenhador.DrawString(texto, letra, pincel, ponto);
+			//string texto = "Guilherme Silva";
+			//Font letra = new Font("Arial", 18, FontStyle.Bold, GraphicsUnit.Point);
+			//Brush pincel = new SolidBrush(Color.Black);
+			//Point ponto = new Point(10, 20);
+			//Rectangle rect = new Rectangle(10, 20, 550, 350);
+			//StringFormat alinhamento = new StringFormat();
 
-			alinhamento.Alignment = StringAlignment.Center;
-			alinhamento.LineAlignment = StringAlignment.Far;
-			//alinhamento.FormatFlags = StringFormatFlags.NoWrap;
-			
-			desenhador.DrawString("Titulo da Pagina", letra, Brushes.Red, rect, alinhamento);
-			desenhador.DrawString(texto, letra, pincel, new Rectangle(10, 80, 550, 300));
+			////desenhador.DrawRectangle(new Pen(Color.Red), rect);
+			////desenhador.DrawString(texto, letra, pincel, ponto);
+
+			//alinhamento.Alignment = StringAlignment.Center;
+			//alinhamento.LineAlignment = StringAlignment.Far;
+			////alinhamento.FormatFlags = StringFormatFlags.NoWrap;
+
+			//desenhador.DrawString("Titulo da Pagina", letra, Brushes.Red, rect, alinhamento);
+			//desenhador.DrawString(texto, letra, pincel, new Rectangle(10, 80, 550, 300));
+
+			#endregion
+
+			#region Imagens
+
+			Image imgOriginal1 = Image.FromFile(Application.StartupPath + @"\imagens\paisagem.jpg");
+			Rectangle origem1 = new Rectangle(0, 0, 75, 180);
+			Rectangle destino1 = new Rectangle(0, 0, pictureBox1.Width, pictureBox1.Height);
+
+			Image imgOriginal2 = Image.FromFile(Application.StartupPath + @"\imagens\sprites.png");
+			Rectangle origem2 = new Rectangle(40, 25, 150, 200);
+			Rectangle destino2 = new Rectangle(170, 170, 150, 200);
+
+			desenhador.DrawImage(imgOriginal1, destino1, origem1, GraphicsUnit.Pixel);
+			desenhador.DrawImage(imgOriginal2, destino2, origem2, GraphicsUnit.Pixel);
 
 			#endregion
 
