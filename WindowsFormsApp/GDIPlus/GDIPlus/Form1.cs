@@ -144,11 +144,37 @@ namespace GDIPlus
 
 			#region Arcos
 
-			Pen lapis = new Pen(Color.Black);
-			Rectangle rect = new Rectangle(100, 50, 400, 250);
-			
-			//desenhador.DrawRectangle(lapis, rect);
-			desenhador.DrawArc(lapis, rect, 45f, 250f);
+			//Pen lapis = new Pen(Color.Black);
+			//Rectangle rect = new Rectangle(100, 50, 400, 250);
+
+			////desenhador.DrawRectangle(lapis, rect);
+			//desenhador.DrawArc(lapis, rect, 45f, 250f);
+
+			#endregion
+
+			#region Beziers / Beziers 
+
+			Pen lapis = new Pen(Color.Black, 5);
+			Point p1 = new Point(50, 300);
+			Point p2 = new Point(200, 400);
+			Point p3 = new Point(300, 10);
+			Point p4 = new Point(500, 100);
+
+			desenhador.DrawBezier(lapis, p1, p2, p3, p4);
+
+			Point[] pontos =
+			{
+				new Point(50, 300),
+				new Point(150, 350),
+				new Point(300, 10),
+				new Point(400, 150),
+				new Point(500, 400),
+				new Point(550, 10),
+				new Point(600, 100)
+			};
+
+
+			desenhador.DrawBeziers(lapis, pontos);
 
 			#endregion
 
