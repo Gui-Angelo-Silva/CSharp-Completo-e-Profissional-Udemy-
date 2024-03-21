@@ -180,13 +180,27 @@ namespace GDIPlus
 
 			#region Pie
 
-			Pen lapis = new Pen(Color.Black, 5);
-			Rectangle rect = new Rectangle(50, 50, 300, 300);
+			//Pen lapis = new Pen(Color.Black, 5);
+			//Rectangle rect = new Rectangle(50, 50, 300, 300);
 
-			//desenhador.DrawPie(lapis, rect, 270, 90);
+			////desenhador.DrawPie(lapis, rect, 270, 90);
 
-			desenhador.FillPie(Brushes.Red, rect, 270, 270);
-			//desenhador.DrawRectangle(lapis, rect);
+			//desenhador.FillPie(Brushes.Red, rect, 270, 270);
+			////desenhador.DrawRectangle(lapis, rect);
+
+			#endregion
+
+			#region Path
+
+			Pen lapis = new Pen(Color.Black);
+			GraphicsPath graphicsPath = new GraphicsPath(FillMode.Alternate);
+
+			graphicsPath.AddEllipse(new RectangleF(10, 10, 100, 150));
+			graphicsPath.AddEllipse(new RectangleF(50, 10, 100, 150));
+			graphicsPath.AddRectangle(new RectangleF(120, 50, 150, 100));
+
+			//desenhador.DrawPath(lapis, graphicsPath);
+			desenhador.FillPath(Brushes.Red, graphicsPath);
 
 			#endregion
 
