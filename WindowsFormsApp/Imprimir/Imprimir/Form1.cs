@@ -18,10 +18,14 @@ namespace Imprimir
 		int altura;
 		int largura;
 		int num_linhas;
+		int pagina;
+		int num_paginas;
 
 		public Form1()
 		{
 			InitializeComponent();
+			pagina = 0;
+			num_paginas = 0;
 		}
 
 		private void btnImprimir_Click(object sender, EventArgs e)
@@ -30,8 +34,15 @@ namespace Imprimir
 			altura = printDocument1.DefaultPageSettings.Bounds.Height;
 			x = 50;
 			y = 50;
-			num_linhas = 1;
-			printDocument1.Print();
+			num_linhas = 0;
+
+			printDialog1.Document = printDocument1;
+
+			if (printDialog1.ShowDialog() != DialogResult.Cancel)
+			{
+				printDocument1.PrinterSettings = printDialog1.PrinterSettings;
+				printDocument1.Print();
+			}
 		}
 
 		private void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
@@ -133,27 +144,67 @@ namespace Imprimir
 			Brush pincel = new SolidBrush(Color.Black);
 
 			while (num_linhas < linhas.Count)
-            {
-                if (num_linhas == 0)
-                {
+			{
+				if (num_linhas == 0)
+				{
 					e.Graphics.DrawString(titulo, letraTitulo, pincelTitulo, areaTitulo);
 					y += 150;
-                }
+				}
 
-                e.Graphics.DrawString(linhas[num_linhas], letra, pincel, new Point(x, y));
+				e.Graphics.DrawString(linhas[num_linhas], letra, pincel, new Point(x, y));
 				y += 30;
 				num_linhas++;
 
-                if (y >= altura - 50)
-                {
+				if (y >= altura - 50)
+				{
 					// Mudar de Página
 					y = 50;
 					e.HasMorePages = true;
+					num_paginas++;
 					break;
-                }
-            }
+				}
+			}
 
 			#endregion
+
+			#region Parte 4
+
+
+
+			#endregion
+		}
+
+		private void btnVisualizar_Click(object sender, EventArgs e)
+		{
+			largura = printDocument1.DefaultPageSettings.Bounds.Width;
+			altura = printDocument1.DefaultPageSettings.Bounds.Height;
+			x = 50;
+			y = 50;
+			num_linhas = 0;
+
+			printPreviewControl1.Document = printDocument1;
+		}
+
+		private void btnAnterior_Click(object sender, EventArgs e)
+		{
+			if (pagina > 0)
+			{
+				printPreviewControl1.StartPage = --pagina;
+			}
+		}
+
+		private void btnProxima_Click(object sender, EventArgs e)
+		{
+			if (pagina < num_paginas)
+			{
+				printPreviewControl1.StartPage = ++pagina;
+			}
+		}
+
+		private void btnVisualizarPadrao_Click(object sender, EventArgs e)
+		{
+			printPreviewDialog1.Document = printDocument1;
+			printPreviewDialog1.ShowDialog();
 		}
 	}
 }
