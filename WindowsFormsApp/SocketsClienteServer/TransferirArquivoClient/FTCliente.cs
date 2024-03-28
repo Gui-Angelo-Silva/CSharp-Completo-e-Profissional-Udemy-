@@ -17,7 +17,6 @@ namespace TranferirArquivoCliente
 		static Socket clientSock_cliente;
 		public static string EnderecoIP = "127.0.0.1";
 		public static int PortaHost = 1000;
-		public static string PastaRecepcaoArquivos = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\";
 		public static Label LabelMensagem;
 		public static void EnviarArquivo(string arquivo)
 		{

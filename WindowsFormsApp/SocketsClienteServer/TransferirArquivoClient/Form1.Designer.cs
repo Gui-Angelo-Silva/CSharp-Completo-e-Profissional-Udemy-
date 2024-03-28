@@ -87,7 +87,8 @@
 			this.txtArquivo.Name = "txtArquivo";
 			this.txtArquivo.Size = new System.Drawing.Size(771, 30);
 			this.txtArquivo.TabIndex = 7;
-			this.txtArquivo.Text = "Clique para selecionar a pasta...";
+			this.txtArquivo.Text = "Clique para selecionar um arquivo...";
+			this.txtArquivo.Click += new System.EventHandler(this.txtArquivo_Click);
 			// 
 			// btnEnviarArquivo
 			// 
@@ -98,6 +99,7 @@
 			this.btnEnviarArquivo.TabIndex = 8;
 			this.btnEnviarArquivo.Text = "Enviar Arquivo\r\n";
 			this.btnEnviarArquivo.UseVisualStyleBackColor = true;
+			this.btnEnviarArquivo.Click += new System.EventHandler(this.btnEnviarArquivo_Click);
 			// 
 			// lblStatus
 			// 
@@ -109,7 +111,6 @@
 			this.lblStatus.TabIndex = 9;
 			this.lblStatus.Text = "Status";
 			this.lblStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.lblStatus.Click += new System.EventHandler(this.lblStatus_Click);
 			// 
 			// Form1
 			// 

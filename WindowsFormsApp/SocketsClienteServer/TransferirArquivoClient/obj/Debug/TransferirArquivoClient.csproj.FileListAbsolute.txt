@@ -1,0 +1,11 @@
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\SocketsClienteServer\TransferirArquivoClient\bin\Debug\TransferirArquivoClient.exe.config
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\SocketsClienteServer\TransferirArquivoClient\bin\Debug\TransferirArquivoClient.exe
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\SocketsClienteServer\TransferirArquivoClient\bin\Debug\TransferirArquivoClient.pdb
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\SocketsClienteServer\TransferirArquivoClient\obj\Debug\TransferirArquivoClient.csproj.AssemblyReference.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\SocketsClienteServer\TransferirArquivoClient\obj\Debug\TransferirArquivoClient.csproj.SuggestedBindingRedirects.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\SocketsClienteServer\TransferirArquivoClient\obj\Debug\TransferirArquivoClient.Form1.resources
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\SocketsClienteServer\TransferirArquivoClient\obj\Debug\TransferirArquivoClient.Properties.Resources.resources
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\SocketsClienteServer\TransferirArquivoClient\obj\Debug\TransferirArquivoClient.csproj.GenerateResource.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\SocketsClienteServer\TransferirArquivoClient\obj\Debug\TransferirArquivoClient.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\SocketsClienteServer\TransferirArquivoClient\obj\Debug\TransferirArquivoClient.exe
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\SocketsClienteServer\TransferirArquivoClient\obj\Debug\TransferirArquivoClient.pdb
