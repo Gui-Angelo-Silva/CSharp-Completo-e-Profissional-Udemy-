@@ -16,7 +16,7 @@ namespace TransferirArquivoServer
 		static Socket sock_Servidor;
 		public static string EnderecoIP = "127.0.0.1";
 		public static int PortaHost  = 1000;
-		public static string PastaRepepcaoArquivos = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"/";
+		public static string PastaRepepcaoArquivos = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\";
 		public static ListBox ListaMensagem;
 
 		public static void IniciarServidor()

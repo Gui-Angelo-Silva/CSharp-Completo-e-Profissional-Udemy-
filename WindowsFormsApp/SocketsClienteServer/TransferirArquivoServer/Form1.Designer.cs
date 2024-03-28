@@ -32,10 +32,10 @@
 			this.txtEnderecoIP = new System.Windows.Forms.TextBox();
 			this.btnEstabelecerConexao = new System.Windows.Forms.Button();
 			this.btnParaServidor = new System.Windows.Forms.Button();
-			this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+			this.txtPorta = new System.Windows.Forms.NumericUpDown();
 			this.txtPasta = new System.Windows.Forms.Label();
 			this.listaLogs = new System.Windows.Forms.ListBox();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtPorta)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -79,24 +79,24 @@
 			this.btnParaServidor.UseVisualStyleBackColor = true;
 			this.btnParaServidor.Click += new System.EventHandler(this.btnParaServidor_Click);
 			// 
-			// numericUpDown1
+			// txtPorta
 			// 
-			this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.numericUpDown1.Location = new System.Drawing.Point(404, 100);
-			this.numericUpDown1.Maximum = new decimal(new int[] {
+			this.txtPorta.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtPorta.Location = new System.Drawing.Point(404, 100);
+			this.txtPorta.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-			this.numericUpDown1.Minimum = new decimal(new int[] {
+			this.txtPorta.Minimum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
-			this.numericUpDown1.Name = "numericUpDown1";
-			this.numericUpDown1.Size = new System.Drawing.Size(120, 31);
-			this.numericUpDown1.TabIndex = 4;
-			this.numericUpDown1.Value = new decimal(new int[] {
+			this.txtPorta.Name = "txtPorta";
+			this.txtPorta.Size = new System.Drawing.Size(120, 31);
+			this.txtPorta.TabIndex = 4;
+			this.txtPorta.Value = new decimal(new int[] {
             1000,
             0,
             0,
@@ -131,7 +131,7 @@
 			this.ClientSize = new System.Drawing.Size(800, 510);
 			this.Controls.Add(this.listaLogs);
 			this.Controls.Add(this.txtPasta);
-			this.Controls.Add(this.numericUpDown1);
+			this.Controls.Add(this.txtPorta);
 			this.Controls.Add(this.btnParaServidor);
 			this.Controls.Add(this.btnEstabelecerConexao);
 			this.Controls.Add(this.txtEnderecoIP);
@@ -139,7 +139,7 @@
 			this.Name = "Form1";
 			this.Text = "Form1";
 			this.Load += new System.EventHandler(this.Form1_Load);
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtPorta)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -151,7 +151,7 @@
 		private System.Windows.Forms.TextBox txtEnderecoIP;
 		private System.Windows.Forms.Button btnEstabelecerConexao;
 		private System.Windows.Forms.Button btnParaServidor;
-		private System.Windows.Forms.NumericUpDown numericUpDown1;
+		private System.Windows.Forms.NumericUpDown txtPorta;
 		private System.Windows.Forms.Label txtPasta;
 		private System.Windows.Forms.ListBox listaLogs;
 	}
