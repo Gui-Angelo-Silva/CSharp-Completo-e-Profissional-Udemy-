@@ -1,0 +1,10 @@
+C:\Users\guilh\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\TopicosComplementares\MeuApp\bin\Release\MeuApp.exe.config
+C:\Users\guilh\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\TopicosComplementares\MeuApp\bin\Release\MeuApp.exe
+C:\Users\guilh\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\TopicosComplementares\MeuApp\bin\Release\MeuApp.pdb
+C:\Users\guilh\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\TopicosComplementares\MeuApp\obj\Release\MeuApp.csproj.AssemblyReference.cache
+C:\Users\guilh\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\TopicosComplementares\MeuApp\obj\Release\MeuApp.Form1.resources
+C:\Users\guilh\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\TopicosComplementares\MeuApp\obj\Release\MeuApp.Properties.Resources.resources
+C:\Users\guilh\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\TopicosComplementares\MeuApp\obj\Release\MeuApp.csproj.GenerateResource.cache
+C:\Users\guilh\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\TopicosComplementares\MeuApp\obj\Release\MeuApp.csproj.CoreCompileInputs.cache
+C:\Users\guilh\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\TopicosComplementares\MeuApp\obj\Release\MeuApp.exe
+C:\Users\guilh\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\TopicosComplementares\MeuApp\obj\Release\MeuApp.pdb
