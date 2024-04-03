@@ -13,7 +13,7 @@ namespace ChatServer
 {
 	public partial class Form1 : Form
 	{
-		private delegate void AtualizarStatusCallback(string strMensagem);
+		private delegate void AtualizaStatusCallback(string strMensagem);
 
 		bool conectado = false;
 
@@ -24,27 +24,27 @@ namespace ChatServer
 
 		private void btnStart_Click(object sender, EventArgs e)
 		{
-            if (conectado)
-            {
+			if (conectado)
+			{
 				Application.Exit();
 				return;
-            }
+			}
 
-            if (txtEnderecoIP.Text == string.Empty)
-            {
+			if (txtEnderecoIP.Text == string.Empty)
+			{
 				MessageBox.Show("Informe o endereço IP.");
 				txtEnderecoIP.Focus();
 				return;
-            }
+			}
 
 			try
 			{
-				// Analisa o endereco IP do servidor informado no textbox
-				IPAddress enderecIP = IPAddress.Parse(txtEnderecoIP.Text);
+				// Analisa o endereço IP do servidor informado no textbox
+				IPAddress enderecoIP = IPAddress.Parse(txtEnderecoIP.Text);
 				int portaHost = (int)numPorta.Value;
 
 				// Cria uma nova instância do objeto ChatServidor
-				Servidor mainServidor = new Servidor(enderecIP, portaHost);
+				Servidor mainServidor = new Servidor(enderecoIP, portaHost);
 
 				// Vincula o tratamento de evento StatusChanged a mainServer_StatusChanged
 				Servidor.StatusChanged += new StatusChangedEventHandler(mainServidor_StatusChanged);
@@ -53,12 +53,12 @@ namespace ChatServer
 				mainServidor.IniciaAtendimento();
 
 				// Mostra que nos iniciamos o atendimento para conexões
-				listaLog.Items.Add("Servidor ativo, aguardadno usuários conectaram-se...");
+				listaLog.Items.Add("Servidor ativo, aguardando usuários conectarem-se...");
 				listaLog.SetSelected(listaLog.Items.Count - 1, true);
 			}
 			catch (Exception ex)
 			{
-				listaLog.Items.Add("Erro de conexão: " + ex.Message);
+				listaLog.Items.Add("Erro de conexão : " + ex.Message);
 				listaLog.SetSelected(listaLog.Items.Count - 1, true);
 				return;
 			}
@@ -66,13 +66,14 @@ namespace ChatServer
 			conectado = true;
 			txtEnderecoIP.Enabled = false;
 			numPorta.Enabled = false;
-			btnStart.ForeColor = Color.Red;	
-        }
+			btnStart.ForeColor = Color.Red;
+			btnStart.Text = "Sair";
+		}
 
 		public void mainServidor_StatusChanged(object sender, StatusChangedEventArgs e)
 		{
 			// Chama o método que atualiza o formulário
-			this.Invoke(new AtualizarStatusCallback(this.AtualizaStatus), new object[] { e.EventMessage });
+			this.Invoke(new AtualizaStatusCallback(this.AtualizaStatus), new object[] { e.EventMessage });
 		}
 
 		private void AtualizaStatus(string strMensagem)

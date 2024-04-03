@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace ChatServer
 {
-	// Esta classe trata as conexões, serão tantas quanto as instâncias dos usuários conectados
+	// Esta classe trata as conexões, serão tantas quanto as instâncias do usuários conectados
 	class Conexao
 	{
 		TcpClient tcpCliente;
@@ -21,15 +21,13 @@ namespace ChatServer
 		private string usuarioAtual;
 		private string strResposta;
 
-		// O construtor da classe que tema a conexão TCP
+		// O construtor da classe que que toma a conexão TCP
 		public Conexao(TcpClient tcpCon)
 		{
 			tcpCliente = tcpCon;
-
 			// A thread que aceita o cliente e espera a mensagem
 			thrSender = new Thread(AceitaCliente);
 			thrSender.IsBackground = true;
-
 			// A thread chama o método AceitaCliente()
 			thrSender.Start();
 		}
@@ -41,7 +39,7 @@ namespace ChatServer
 			srReceptor.Close();
 			swEnviador.Close();
 		}
-		
+
 		// Ocorre quando um novo cliente é aceito
 		private void AceitaCliente()
 		{
@@ -51,24 +49,24 @@ namespace ChatServer
 			// Lê a informação da conta do cliente
 			usuarioAtual = srReceptor.ReadLine();
 
-            // Temos uma resposta do cliente
-            if (usuarioAtual != "")
-            {
-                // Armazena o nome do usuário na hash table
-                if (Servidor.htUsuarios.Contains(usuarioAtual))
-                {
+			// temos uma resposta do cliente
+			if (usuarioAtual != "")
+			{
+				// Armazena o nome do usuário na hash table
+				if (Servidor.htUsuarios.Contains(usuarioAtual))
+				{
 					// 0 => significa não conectado
 					swEnviador.WriteLine("0|Este nome de usuário já existe.");
 					swEnviador.Flush();
 					FechaConexao();
 					return;
 				}
-				else if (usuarioAtual == "Administrador")
+				else if (usuarioAtual == "Administrator")
 				{
 					// 0 => não conectado
-					swEnviador.WriteLine("0|Este nome de usuário é reservado");
+					swEnviador.WriteLine("0|Este nome de usuário é reservado.");
 					swEnviador.Flush();
-					FechaConexao(); 
+					FechaConexao();
 					return;
 				}
 				else
@@ -77,37 +75,38 @@ namespace ChatServer
 					swEnviador.WriteLine("1");
 					swEnviador.Flush();
 
-					// Inclui o usuário na has table e inicia a escuta das suas mensagens
-					Servidor.IncluiUsuario(tcpCliente, usuarioAtual);	
+					// Inclui o usuário na hash table e inicia a escuta de suas mensagens
+					Servidor.IncluiUsuario(tcpCliente, usuarioAtual);
 				}
-            }
+			}
 			else
 			{
 				FechaConexao();
 				return;
 			}
+
 			try
 			{
-				// Continua aguadando por uma mensagem do usuário
-				while ((strResposta =  srReceptor.ReadLine()) != "")
+				// Continua aguardando por uma mensagem do usuário
+				while ((strResposta = srReceptor.ReadLine()) != "")
 				{
-                    // Se for inválido remove-o
-                    if (strResposta == null)
-                    {
+					// Se for inválido remove-o
+					if (strResposta == null)
+					{
 						Servidor.RemoveUsuario(tcpCliente);
-                    }
+					}
 					else
 					{
-						// Envia a mensagem para todos os outros usuários
+						// envia a mensagem para todos os outros usuários
 						Servidor.EnviaMensagem(usuarioAtual, strResposta);
 					}
-                }
+				}
 			}
-			catch 
+			catch
 			{
-				// Se houver um problema com este usuário desconecta-o
+				// Se houve um problema com este usuário desconecta-o
 				Servidor.RemoveUsuario(tcpCliente);
 			}
-        }
+		}
 	}
 }

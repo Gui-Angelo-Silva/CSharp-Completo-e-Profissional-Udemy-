@@ -6,22 +6,23 @@ using System.Threading.Tasks;
 
 namespace ChatServer
 {
+	// Trata os argumentos para o evento StatusChanged
 	public class StatusChangedEventArgs : EventArgs
 	{
 		// Estamos interessados na mensagem descrevendo o evento
 		private string EventMsg;
 
-		// Propriedade para retornar a definir uma mensagem do evento;
+		// Propriedade para retornar e definir um mensagem do evento
 		public string EventMessage
-		{ 
-			get {  return EventMsg; }
+		{
+			get { return EventMsg; }
 			set { EventMsg = value; }
 		}
 
 		// Construtor para definir a mensagem do evento
-		public StatusChangedEventArgs(string eventMsg)
+		public StatusChangedEventArgs(string strEventMsg)
 		{
-			EventMsg = eventMsg;
+			EventMsg = strEventMsg;
 		}
 	}
 }
