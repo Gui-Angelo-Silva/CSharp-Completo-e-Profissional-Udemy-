@@ -1,0 +1,6 @@
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\TopicosComplementares\Operacoes\bin\Debug\Operacoes.dll
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\TopicosComplementares\Operacoes\bin\Debug\Operacoes.pdb
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\TopicosComplementares\Operacoes\obj\Debug\Operacoes.csproj.AssemblyReference.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\TopicosComplementares\Operacoes\obj\Debug\Operacoes.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\TopicosComplementares\Operacoes\obj\Debug\Operacoes.dll
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\TopicosComplementares\Operacoes\obj\Debug\Operacoes.pdb
