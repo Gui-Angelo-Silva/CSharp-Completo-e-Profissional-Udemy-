@@ -5,6 +5,8 @@ VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CriptoStringMD5", "CriptoStringMD5\CriptoStringMD5.csproj", "{0B71857A-CAD3-40FC-B116-C504EA0CDF7D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CriptoFile", "CriptoFile\CriptoFile.csproj", "{477A4C62-1B14-460C-AE8F-BA626AF49D48}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{0B71857A-CAD3-40FC-B116-C504EA0CDF7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B71857A-CAD3-40FC-B116-C504EA0CDF7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B71857A-CAD3-40FC-B116-C504EA0CDF7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{477A4C62-1B14-460C-AE8F-BA626AF49D48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{477A4C62-1B14-460C-AE8F-BA626AF49D48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{477A4C62-1B14-460C-AE8F-BA626AF49D48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{477A4C62-1B14-460C-AE8F-BA626AF49D48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
