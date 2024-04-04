@@ -1,0 +1,11 @@
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\CriptografiaDeDados\CriptoStringMD5\bin\Debug\CriptoStringMD5.exe.config
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\CriptografiaDeDados\CriptoStringMD5\bin\Debug\CriptoStringMD5.exe
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\CriptografiaDeDados\CriptoStringMD5\bin\Debug\CriptoStringMD5.pdb
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\CriptografiaDeDados\CriptoStringMD5\obj\Debug\CriptoStringMD5.csproj.AssemblyReference.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\CriptografiaDeDados\CriptoStringMD5\obj\Debug\CriptoStringMD5.csproj.SuggestedBindingRedirects.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\CriptografiaDeDados\CriptoStringMD5\obj\Debug\CriptoStringMD5.Form1.resources
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\CriptografiaDeDados\CriptoStringMD5\obj\Debug\CriptoStringMD5.Properties.Resources.resources
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\CriptografiaDeDados\CriptoStringMD5\obj\Debug\CriptoStringMD5.csproj.GenerateResource.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\CriptografiaDeDados\CriptoStringMD5\obj\Debug\CriptoStringMD5.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\CriptografiaDeDados\CriptoStringMD5\obj\Debug\CriptoStringMD5.exe
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\CriptografiaDeDados\CriptoStringMD5\obj\Debug\CriptoStringMD5.pdb
