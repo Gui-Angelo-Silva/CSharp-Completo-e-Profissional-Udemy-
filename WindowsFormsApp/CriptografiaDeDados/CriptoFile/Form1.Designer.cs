@@ -29,7 +29,7 @@
 		private void InitializeComponent()
 		{
 			this.label1 = new System.Windows.Forms.Label();
-			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.txtKey = new System.Windows.Forms.TextBox();
 			this.btnCriptografarArquivo = new System.Windows.Forms.Button();
 			this.btnDescriptografarArquivo = new System.Windows.Forms.Button();
 			this.btnCriarChaves = new System.Windows.Forms.Button();
@@ -48,13 +48,13 @@
 			this.label1.Text = "Chave não definida";
 			this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
-			// textBox1
+			// txtKey
 			// 
-			this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.textBox1.Location = new System.Drawing.Point(299, 155);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(245, 31);
-			this.textBox1.TabIndex = 1;
+			this.txtKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtKey.Location = new System.Drawing.Point(299, 155);
+			this.txtKey.Name = "txtKey";
+			this.txtKey.Size = new System.Drawing.Size(245, 31);
+			this.txtKey.TabIndex = 1;
 			// 
 			// btnCriptografarArquivo
 			// 
@@ -133,7 +133,7 @@
 			this.Controls.Add(this.btnCriarChaves);
 			this.Controls.Add(this.btnDescriptografarArquivo);
 			this.Controls.Add(this.btnCriptografarArquivo);
-			this.Controls.Add(this.textBox1);
+			this.Controls.Add(this.txtKey);
 			this.Controls.Add(this.label1);
 			this.Name = "Form1";
 			this.Text = "Form1";
@@ -145,7 +145,7 @@
 		#endregion
 
 		private System.Windows.Forms.Label label1;
-		private System.Windows.Forms.TextBox textBox1;
+		private System.Windows.Forms.TextBox txtKey;
 		private System.Windows.Forms.Button btnCriptografarArquivo;
 		private System.Windows.Forms.Button btnDescriptografarArquivo;
 		private System.Windows.Forms.Button btnCriarChaves;
