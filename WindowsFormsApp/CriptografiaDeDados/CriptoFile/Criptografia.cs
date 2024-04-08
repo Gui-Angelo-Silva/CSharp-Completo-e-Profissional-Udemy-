@@ -237,6 +237,7 @@ namespace CriptoFile
 						outStreamEncrypted.Close();
 					}
 					outFs.Close();
+					File.Delete(infile);
 				}
 			}
 			catch (Exception ex)

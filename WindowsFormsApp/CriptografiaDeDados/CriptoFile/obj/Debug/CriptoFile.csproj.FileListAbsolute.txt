@@ -1,0 +1,11 @@
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\CriptografiaDeDados\CriptoFile\bin\Debug\CriptoFile.exe.config
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\CriptografiaDeDados\CriptoFile\bin\Debug\CriptoFile.exe
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\CriptografiaDeDados\CriptoFile\bin\Debug\CriptoFile.pdb
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\CriptografiaDeDados\CriptoFile\obj\Debug\CriptoFile.csproj.AssemblyReference.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\CriptografiaDeDados\CriptoFile\obj\Debug\CriptoFile.csproj.SuggestedBindingRedirects.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\CriptografiaDeDados\CriptoFile\obj\Debug\CriptoFile.Form1.resources
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\CriptografiaDeDados\CriptoFile\obj\Debug\CriptoFile.Properties.Resources.resources
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\CriptografiaDeDados\CriptoFile\obj\Debug\CriptoFile.csproj.GenerateResource.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\CriptografiaDeDados\CriptoFile\obj\Debug\CriptoFile.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\CriptografiaDeDados\CriptoFile\obj\Debug\CriptoFile.exe
+C:\Users\Aluno\Documents\CSharp-Completo-e-Profissional-Udemy-\WindowsFormsApp\CriptografiaDeDados\CriptoFile\obj\Debug\CriptoFile.pdb

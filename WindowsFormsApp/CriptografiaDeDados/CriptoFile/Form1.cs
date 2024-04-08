@@ -94,7 +94,7 @@ namespace CriptoFile
 			if (Criptografia.ExportPublicKey())
             {
 				label1.ForeColor = Color.DarkBlue;
-				label1.Text = "Chav publica exportada";
+				label1.Text = "Chave publica exportada";
             }
 			else
 			{
