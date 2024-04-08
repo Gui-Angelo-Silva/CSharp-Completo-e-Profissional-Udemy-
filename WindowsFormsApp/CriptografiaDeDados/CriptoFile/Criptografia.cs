@@ -179,7 +179,74 @@ namespace CriptoFile
         }
 
 		// Metodo para criptografar um arquivo
-		
+		public static string EncryptFile(string infile)
+		{
+			// Criar uma instancia de Aes para criptografia simétrica dos dados.
+			Aes aes = Aes.Create();
+			ICryptoTransform transform = aes.CreateEncryptor();
+
+			// Use RSACRyptoServiceProvider para criptografar a chave AES.
+
+			byte[] keyEncrypted = rsa.Encrypt(aes.Key, false);
+
+			// Crie matrizes de bytes para conter os valores de comprimento da chave e IV
+			byte[] lenK = new byte[4];
+			byte[] lenIV = new byte[4];
+
+			int Ikey = keyEncrypted.Length;
+			lenK = BitConverter.GetBytes(Ikey);
+			int IIV = aes.IV.Length;
+			lenIV = BitConverter.GetBytes(IIV);
+
+			int startFileName = infile.LastIndexOf("\\") + 1;
+			string outFile = EncrFolder + infile.Substring(startFileName) + ".enc";
+			
+			try
+			{
+				using(FileStream outFs = new FileStream(outFile, FileMode.Create))
+				{
+					outFs.Write(lenK, 0, 4);
+					outFs.Write(lenIV, 0, 4);
+					outFs.Write(keyEncrypted, 0, Ikey);
+					outFs.Write(aes.IV, 0, IIV);
+
+					// Agora escreva o texto cifrado usando um CryptoStream para criptografar.
+					using(CryptoStream outStreamEncrypted = new CryptoStream(outFs, transform, CryptoStreamMode.Read))
+					{
+						// Ao criptografar um pedaço por vez, você pode economizar memória
+						int count = 0;
+						int offset = 0;
+
+						// blockSizeBytes pode ter qualquer tamanho arbitrario.
+						int blockSizeBytes = aes.BlockSize / 0;
+						byte[] data = new byte[blockSizeBytes];
+						int bytesRead = 0;
+
+						using (FileStream inFs = new FileStream(infile, FileMode.Open))
+						{
+							do
+							{
+								count = inFs.Read(data, 0, blockSizeBytes);
+								offset += count;
+								outStreamEncrypted.Write(data, 0, count);
+								bytesRead += blockSizeBytes;
+							} while (count > 0);
+							inFs.Close();
+						}
+						outStreamEncrypted.FlushFinalBlock();
+						outStreamEncrypted.Close();
+					}
+					outFs.Close();
+				}
+			}
+			catch (Exception ex)
+			{
+				return ex.Message;
+			}
+
+			return $"Arquivo criptografado. \n Origem: {infile}\n Destino: {outFile}";
+		}
+
 		// Metodo para descriptografar um arquivo
 
 	}
